@@ -83,7 +83,6 @@ export default {
     img: 'demo/demo_1.jpg'
   },
 
-
   countdown: {
     // date: '24/12/2016',
     date: 'December 24,2016',

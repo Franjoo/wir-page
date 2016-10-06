@@ -4,7 +4,7 @@ var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
 // var bourbon = require('node-bourbon').includePaths
 // var neat = require('node-neat').includePaths
-
+// require('vue-scroll')
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // var sassPaths = require("node-neat").includePaths.map(function (sassPath) {

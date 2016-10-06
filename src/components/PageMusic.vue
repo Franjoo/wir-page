@@ -1,8 +1,8 @@
 <!------------------- H T M L ------------------->
 
 <template>
-  <div class="i">
-
+  <div class="page-music">
+    page music
   </div>
 </template>
 
@@ -32,7 +32,7 @@
 
 <style lang="scss" scoped>
 
-  .i {
+  .page-music {
     background-color: lightsalmon;
   }
 </style>

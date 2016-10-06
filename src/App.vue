@@ -1,93 +1,106 @@
 <template>
-  <div id="app">
+    <div id="app">
 
-    <hello></hello>
+        <div class="header">
+            header
+        </div>
 
+        <navigation></navigation>
 
-    <navigation></navigation>
+        <div class="component-ctn">
+            <router-view></router-view>
+        </div>
 
-    <countdown
-      :deadline='24/12/2016'
-    ></countdown>
-
-    <mini-text></mini-text>
-
-    <!--<image-grid></image-grid>-->
-
-    <simple-story></simple-story>
-
-    <image-viewer></image-viewer>
-
-    <artist
-      :scoped_player.sync=scoped_player
-    ></artist>
-
-  </div>
+    </div>
 </template>
 
 <script>
-  import Hello from './components/Hello';
-  import Artist from './components/Artist';
-  import MiniText from './components/MiniText';
-  import SimpleStory from './components/SimpleStory';
-  import ImageViewer from './components/ImageViewer';
-  import ImageGrid from './components/ImageGrid';
-  import Countdown from './components/Countdown';
-  import Navigation from './components/Navigation.vue';
-  //import 'bourbon'
+
+    import Navigation from './components/Navigation.vue';
+
+    export default {
 
 
-  export default {
-    components: {
-      Hello, Artist, ImageViewer, SimpleStory, ImageGrid, MiniText, Countdown, Navigation
-//        Hello, ImageViewer,
-//    SimpleStory
-    },
-    data: function () {
-      return {
-        scoped_player: null
-      }
-    }
-  };
+        components: {
+            Navigation
+        },
+
+
+        data: function () {
+            return {
+                scoped_player: null,
+                scrollPosition: {
+                    scrollTop: 0,
+                    scrollLeft: 0
+                },
+            }
+        },
+
+        methods: {
+            onScroll: function () {
+                this.scrollPosition.scrollTop = window.scrollY;
+                this.scrollPosition.scrollLeft = window.scrollX;
+//                console.log('on scroll',
+//                        this.scrollPosition.scrollTop,
+//                        this.scrollPosition.scrollLeft)
+            }
+        },
+
+        computed: {
+            translation: function () {
+                let factor = 0.2;
+                return 'translateY(-' + (factor * this.scrollPosition.scrollTop) + 'px)';
+            }
+        },
+
+        mounted: function () {
+            console.log('app mounted', this)
+//            window.addEventListener('scroll', this.onScroll)
+        }
+
+    };
 </script>
 
 <style lang="scss">
 
-  html {
-    height: 100%;
-  }
 
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    html {
+        height: 100%;
+    }
 
-  #app {
-    color: #ffffff;
-    /*margin-top: 100px;*/
-    max-width: 600px;
+    body {
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        /* The image used */
+        /* Set a specific height */
+        /*min-height: 500px;*/
 
-    font-family: Source Sans Pro, Helvetica, sans-serif;
-    font-weight: 300;
+        /*!* Create the parallax scrolling effect *!*/
+        /*background: #131f2a url("assets/birke.jpg") no-repeat fixed center;*/
+        /*background-size: cover;*/
 
+    }
 
-    height: 100%;
-    flex-direction: column;
+    #app {
 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: darkslategrey;
+        justify-content: center;
+        align-items: center;
 
-  }
+        .header {
+            width: 100%;
+            background: darkgreen;
+            height: 200px;
+        }
 
-  #app a {
-    color: #42b983;
-    text-decoration: none;
-  }
+        .component-ctn {
+            max-width: 600px;
+        }
 
-  .logo {
-    width: 100px;
-    height: 100px;
+    }
 
-    /*<!--@include linear-gradient(to top, #8fdce5, #d17687);-->*/
-    /*<!--@include filter(grayscale(50%));-->*/
-  }
 </style>

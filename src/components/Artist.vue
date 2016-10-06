@@ -49,6 +49,7 @@
 
   import SongPlayer from './SongPlayer'
   import dummy from './../dummy'
+//  require('vue-scroll')
 
   export default {
     props: ['scoped_player'],
@@ -90,7 +91,7 @@
       .artist-right {
 
         .artist-img-wrapper {
-          display: none;
+          /*display: none;*/
           height: 100%;
           /*display: flex;*/
           justify-content: center;
@@ -104,7 +105,7 @@
           .thumbnail {
             position: relative;
 
-            width: 400px;
+            width: 100%;
             height: 300px;
             overflow: hidden;
           }
