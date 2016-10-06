@@ -19,7 +19,7 @@
           <!--{{ icon() }}-->
           <!--{{ css_button }}-->
 
-          <audio v-el:audio :src="audioPath" preload="true"></audio>
+          <audio ref=audio :src="audioPath" preload="true"></audio>
         </div>
 
       </div>
@@ -70,7 +70,7 @@
       pause: function () {
         console.log('scopedPause')
         this.paused = true;
-        this.$els.audio.pause()
+        this.$refs.audio.pause()
       },
 
       togglePlay: function () {
@@ -86,9 +86,9 @@
         }
 
         if (!this.paused) {
-          this.$els.audio.play()
+          this.$refs.audio.play()
         } else {
-          this.$els.audio.pause()
+          this.$refs.audio.pause()
         }
 
       },
@@ -104,8 +104,8 @@
 
     },
 
-    ready: function () {
-      console.log(this.$els.audio.src, this.audioPath)
+    mounted: function () {
+      console.log(this.$refs.audio.src, this.audioPath)
     }
 
   };

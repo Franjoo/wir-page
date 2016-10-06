@@ -14,7 +14,7 @@
         <!--</div>-->
 
         <div class="artist-music">
-          <div class="player-row" v-for="(index, track) in a.tracks">
+          <div class="player-row" v-for="( track, index) in a.tracks">
             <song-player
               :track=track
               :index=index
@@ -61,7 +61,7 @@
         a: {}
       };
     },
-    ready: function () {
+    mounted: function () {
       this.a = dummy.artist
     }
 

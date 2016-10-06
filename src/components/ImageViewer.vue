@@ -4,8 +4,8 @@
   <div class="image-viewer">
 
     <!--IMAGE ROW-->
-    <div v-el:row class="image-row">
-      <div v-for="(index, i) in a.images" class="img-container" :style="{ transform: translation}">
+    <div class="image-row">
+      <div v-for="(i, index) in a.images" class="img-container" :style="{ transform: translation}">
         <div class="image-wrapper">
           <div class="thumbnail">
             <!--<img :src="'./../assets/photos/album_demo/' + i.path" alt="Image"/>-->
@@ -39,12 +39,12 @@
   import dummy from './../dummy'
   //  require('./../assets/photos/album_demo/*')
   //  import './../assets/photos/album_demo'
-
-  //    var req = require.context("../assets/photos/album_demo", true, /^(.*\.(jpg$))[^.]*$/igm);
-  ////    var req = require.context("../assets/photos/album_demo", true);
-  //    req.keys().forEach(function(key){
-  //      req(key);
-  //    });
+//
+//      var req = require.context("../assets/photos/album_demo", true, /^(.*\.(jpg$))[^.]*$/igm);
+//  //    var req = require.context("../assets/photos/album_demo", true);
+//      req.keys().forEach(function(key){
+//        req(key);
+//      });
 
   export default {
     props: [],
@@ -124,7 +124,7 @@
 
     },
 
-    ready: function () {
+    mounted: function () {
 
       var self = this
 

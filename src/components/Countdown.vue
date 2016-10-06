@@ -5,7 +5,6 @@
 
     <div class="time-ctn">
 
-
       <!-- DAYS-->
       <div class="time days-ctn">
         <span>{{time.days}}</span>
@@ -65,8 +64,8 @@
       return {
         d: dummy.countdown,
         time: {
-          days, hours: '00',
-//          hours: '00',
+          days: '00',
+          hours: '00',
           minutes: '00',
           seconds: '00',
         }
@@ -99,8 +98,6 @@
 
         var timeinterval = setInterval(function () {
           calcTime()
-
-
         }, 1000)
 
       },
@@ -108,7 +105,7 @@
 
     },
 
-    ready: function () {
+    mounted: function () {
       this.startTimer()
     }
 
@@ -120,6 +117,8 @@
 <!------------------ S T Y L E ------------------>
 
 <style lang="scss" scoped>
+
+  @import '../styles/all';
 
   .countdown {
     background-color: #2c3e50;

@@ -1,6 +1,9 @@
 <template>
   <div id="app">
 
+    <hello></hello>
+
+
     <navigation></navigation>
 
     <countdown
@@ -37,6 +40,8 @@
   export default {
     components: {
       Hello, Artist, ImageViewer, SimpleStory, ImageGrid, MiniText, Countdown, Navigation
+//        Hello, ImageViewer,
+//    SimpleStory
     },
     data: function () {
       return {
@@ -48,26 +53,29 @@
 
 <style lang="scss">
 
-  @import "../node_modules/bourbon/app/assets/stylesheets/bourbon";
-
   html {
     height: 100%;
   }
 
   body {
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
     justify-content: center;
-    height: 100%;
   }
 
   #app {
     color: #ffffff;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     max-width: 600px;
 
     font-family: Source Sans Pro, Helvetica, sans-serif;
     font-weight: 300;
+
+
+    height: 100%;
+    flex-direction: column;
+
+
   }
 
   #app a {

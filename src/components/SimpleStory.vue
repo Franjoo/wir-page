@@ -4,7 +4,7 @@
   <div class="simple-story">
     <span class="title">{{s.title}}</span>
     <div class='story-ctn'>
-      <div class="content-ctn" v-for="(index, c) in s.content">
+      <div class="content-ctn" v-for="(c, index) in s.content">
         <span class='text' v-if='c.text'>{{c.text}}</span>
         <span class='head' v-if='c.head'>{{c.head}}</span>
 
@@ -66,7 +66,7 @@
     },
 
 
-    ready: function () {
+    mounted: function () {
       this.s = dummy.story
     }
 
@@ -89,6 +89,10 @@
     $margin-ctn: 10px;
     $margin-span: 10px;
     $padding-story: 15px;
+
+    text-align: left;
+
+    color: white;
 
     /*width: 100%;*/
     width: $width-ctn;
