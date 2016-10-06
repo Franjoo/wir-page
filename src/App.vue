@@ -1,64 +1,85 @@
 <template>
   <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
-    <p>
-      Welcome to your Vue.js app!
-    </p>
-    <p>
-      To get a better understanding of how this boilerplate works, check out
-      <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
-      It is also recommended to go through the docs for
-      <a href="http://webpack.github.io/" target="_blank">Webpack</a> and
-      <a href="http://vuejs.github.io/vue-loader/" target="_blank">vue-loader</a>.
-      If you have any issues with the setup, please file an issue at this boilerplate's
-      <a href="https://github.com/vuejs-templates/webpack" target="_blank">repository</a>.
-    </p>
-    <p>
-      You may also want to checkout
-      <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
-      <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
-    </p>
+
+    <navigation></navigation>
+
+    <countdown
+      :deadline='24/12/2016'
+    ></countdown>
+
+    <mini-text></mini-text>
+
+    <!--<image-grid></image-grid>-->
+
+    <simple-story></simple-story>
+
+    <image-viewer></image-viewer>
+
+    <artist
+      :scoped_player.sync=scoped_player
+    ></artist>
+
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello';
+  import Hello from './components/Hello';
+  import Artist from './components/Artist';
+  import MiniText from './components/MiniText';
+  import SimpleStory from './components/SimpleStory';
+  import ImageViewer from './components/ImageViewer';
+  import ImageGrid from './components/ImageGrid';
+  import Countdown from './components/Countdown';
+  import Navigation from './components/Navigation.vue';
+  //import 'bourbon'
 
-export default {
-  components: {
-    Hello,
-  },
-};
+
+  export default {
+    components: {
+      Hello, Artist, ImageViewer, SimpleStory, ImageGrid, MiniText, Countdown, Navigation
+    },
+    data: function () {
+      return {
+        scoped_player: null
+      }
+    }
+  };
 </script>
 
-<style>
-html {
-  height: 100%;
-}
+<style lang="scss">
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
+  @import "../node_modules/bourbon/app/assets/stylesheets/bourbon";
 
-#app {
-  color: #2c3e50;
-  margin-top: -100px;
-  max-width: 600px;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
-  text-align: center;
-}
+  html {
+    height: 100%;
+  }
 
-#app a {
-  color: #42b983;
-  text-decoration: none;
-}
+  body {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    height: 100%;
+  }
 
-.logo {
-  width: 100px;
-  height: 100px
-}
+  #app {
+    color: #ffffff;
+    margin-top: 100px;
+    max-width: 600px;
+
+    font-family: Source Sans Pro, Helvetica, sans-serif;
+    font-weight: 300;
+  }
+
+  #app a {
+    color: #42b983;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+
+    /*<!--@include linear-gradient(to top, #8fdce5, #d17687);-->*/
+    /*<!--@include filter(grayscale(50%));-->*/
+  }
 </style>
