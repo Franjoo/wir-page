@@ -5,9 +5,9 @@
     <div class="navigation">
 
         <div class="navigation-ctn">
-            <div class="item-ctn"><span><router-link to="/home">Home</router-link></span></div>
-            <div class="item-ctn"><span><router-link to="/music">Music</router-link></span></div>
-            <div class="item-ctn"><span>About</span></div>
+            <div class="item-ctn"><span><router-link to="/home">Geschichten</router-link></span></div>
+            <div class="item-ctn"><span><router-link to="/music">Musik</router-link></span></div>
+            <div class="item-ctn"><span><router-link to="/music">Über</router-link></span></div>
         </div>
 
     </div>

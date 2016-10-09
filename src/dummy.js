@@ -1,42 +1,151 @@
 export default {
 
-  artist: {
-    name: 'Artist Name',
-    imgURL: 'audiodemo',
-    tracks: [
-      {
-        name: 'demo track one',
-        trackUrl: 'audiodemo',
-        imgURL: 'demo',
-        duration: '7:32'
-      },
+  artists: [
+    {
+      name: 'Artist One',
+      imgURL: 'audiodemo',
+      tracks: [
+        {
+          name: 'demo track one',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '7:32'
+        },
 
-      {
-        name: 'demo track two',
-        trackUrl: 'audiodemo',
-        imgURL: 'demo',
-        duration: '4:12'
-      },
+        {
+          name: 'demo track two',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '4:12'
+        },
 
-      {
-        name: 'demo track three',
-        trackUrl: 'audiodemo',
-        imgURL: 'demo',
-        duration: '5:41'
-      },
+        {
+          name: 'demo track three',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '5:41'
+        },
 
-      {
-        name: 'demo track four',
-        trackUrl: 'audiodemo',
-        imgURL: 'demo',
-        duration: '2:31'
-      }
-
-
-    ]
+        {
+          name: 'demo track four',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '2:31'
+        }
 
 
-  },
+      ]
+    },
+
+    {
+      name: 'Artist Two',
+      imgURL: 'audiodemo',
+      tracks: [
+        {
+          name: 'demo track one',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '7:32'
+        },
+
+        {
+          name: 'demo track two',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '4:12'
+        },
+
+        {
+          name: 'demo track three',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '5:41'
+        },
+
+        {
+          name: 'demo track four',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '2:31'
+        }
+
+
+      ]
+    },
+
+    {
+      name: 'Artist Three',
+      imgURL: 'audiodemo',
+      tracks: [
+        {
+          name: 'demo track one',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '7:32'
+        },
+
+        {
+          name: 'demo track two',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '4:12'
+        },
+
+        {
+          name: 'demo track three',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '5:41'
+        },
+
+        {
+          name: 'demo track four',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '2:31'
+        }
+
+
+      ]
+    },
+
+    {
+      name: 'Artist Four',
+      imgURL: 'audiodemo',
+      tracks: [
+        {
+          name: 'demo track one',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '7:32'
+        },
+
+        {
+          name: 'demo track two',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '4:12'
+        },
+
+        {
+          name: 'demo track three',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '5:41'
+        },
+
+        {
+          name: 'demo track four',
+          trackUrl: 'audiodemo',
+          imgURL: 'demo',
+          duration: '2:31'
+        }
+
+
+      ]
+
+    }],
+
 
   album: {
     name: 'demo',

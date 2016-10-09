@@ -1,15 +1,29 @@
 # Roadmap
 
-## version: 0.4
+## version: 0.7
+- [ ] google analytics
 
+
+## version: 0.6
+- [ ] facebook integration
+- [ ] beatport integration
+
+
+## version: 0.5
+- [ ] component routing with scroll (/music/$artist)
+- [ ] Impressum / AGBs
+
+
+## version: 0.4
 - [ ] components
     - [ ] ImageGrid
     - [ ] StickyNavigation
     - [ ] Header
+    - [ ] Footer
 - [ ] layout breakpoints / media queries
 - [ ] page routing
 - [ ] pure css parallax
- 
+
 
 ## version: 0.3
 Date: 10/10/16

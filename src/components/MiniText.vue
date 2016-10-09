@@ -15,6 +15,7 @@
           <!--<img :src="" alt="Image"/>-->
           <img src='./../assets/eric.jpg' alt="Image"/>
           <!--<img src="'./../assets/eric.jpg'" alt="Image"/>-->
+          <!--<img src="'./../assets/eric.jpg'" alt="Image"/>-->
           <!--<img :src="'./static/img/' + i.path" alt="Image"/>-->
         </div>
 

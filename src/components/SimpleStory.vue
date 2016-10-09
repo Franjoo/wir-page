@@ -3,7 +3,7 @@
 <template>
     <div class="simple-story">
         <span class="title">{{s.title}}</span>
-        <div class='story-ctn' :class="[twoRows ? 'two-rows' : '']">
+        <div ref=story class='story-ctn' :class="[twoRows ? 'two-rows' : '']">
             <div class="content-ctn" v-for="(c, index) in s.content" :class="[twoRows ? 'two-rows' : '']">
                 <span class='text' v-if='c.text'>{{c.text}}</span>
                 <span class='head' v-if='c.head'>{{c.head}}</span>
@@ -16,7 +16,7 @@
 
                 </div>
 
-                <video v-if='c.video' width="560" controls>
+                <video v-if='c.video' controls>
                     <source :src="path + c.video" type="video/mp4">
                     <!--<source src="mov_bbb.ogg" type="video/ogg">-->
                     Your browser does not support HTML5 video.
@@ -68,6 +68,17 @@
 
         mounted: function () {
             this.s = dummy.story
+
+
+            this.$nextTick(function () {
+
+                let s = this.$refs.story;
+                console.log(s.offsetHeight, s.height)
+                            s.style.height = s.offsetHeight / 1.5 + "px";
+
+            })
+
+
         }
 
     }
@@ -83,8 +94,8 @@
 
     .simple-story {
 
-        $width-ctn: 770px;
-        /*<!--$width-ctn: 700px;-->*/
+        $width-ctn: calc(100%);
+        /*<!--$width-ctn: 770px;-->*/
         /*<!--$width-ctn: 560px;-->*/
         $margin-ctn: 10px;
         $margin-span: 10px;
@@ -97,7 +108,7 @@
         /*width: 100%;*/
         width: $width-ctn;
 
-        padding: $padding-story;
+        /*<!--padding: $padding-story;-->*/
 
         margin-bottom: $comp-margin-bottom;
         background-color: #2c3e50;
@@ -117,7 +128,10 @@
 
             &.two-rows {
                 flex-wrap: wrap;
-                max-height: 850px;
+                /*max-height: auto;*/
+
+                $width-ctn: calc(50%);
+
             }
 
             .content-ctn {
@@ -129,15 +143,15 @@
                     width: $width-ctn / 2;
                 }
 
-
-
                 video {
                     margin: $margin-span;
                     width: $width-ctn / 2 - (2 * $margin-span);
                     object-fit: inherit;
                     background-color: transparent;
 
-                     /*<!--width: $width-ctn / 2;-->*/
+                    /*width: 100%;*/
+
+                    /*<!--width: $width-ctn / 2;-->*/
 
                 }
 

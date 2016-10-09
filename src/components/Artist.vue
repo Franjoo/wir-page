@@ -63,7 +63,7 @@
       };
     },
     mounted: function () {
-      this.a = dummy.artist
+      this.a = dummy.artists[0]
     }
 
 
