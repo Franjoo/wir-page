@@ -11,17 +11,20 @@
       <router-view></router-view>
     </div>
 
+    <custom-footer></custom-footer>
+
   </div>
 </template>
 
 <script>
 
-  import Navigation from './components/Navigation.vue';
+  import Navigation from './components/Navigation';
+  import CustomFooter from './components/CustomFooter.vue';
 
   export default {
 
     components: {
-      Navigation
+      Navigation, CustomFooter
     },
 
     data: function () {
@@ -68,7 +71,7 @@
 
   body {
 
-    margin:0 !important;
+    margin: 0 !important;
 
     /*display: flex;*/
     /*align-items: center;*/

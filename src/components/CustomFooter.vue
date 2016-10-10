@@ -1,7 +1,7 @@
 <!------------------- H T M L ------------------->
 
 <template>
-  <div class="footer">
+  <div class="custom-footer">
     footer element
   </div>
 </template>
@@ -31,7 +31,7 @@
 
 <style lang="scss" scoped>
 
-  .footer {
+  .custom-footer {
     color: white;
     background-color: lightsalmon;
     width: 100%;
