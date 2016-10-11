@@ -1,8 +1,8 @@
 <!------------------- H T M L ------------------->
 
 <template>
-  <div class="custom-footer">
-    custom footer
+  <div class="custom-header">
+    custom header
   </div>
 </template>
 
@@ -31,10 +31,7 @@
 
 <style lang="scss" scoped>
 
-  .custom-footer {
-    position: fixed;
-    bottom: 0;
-
+  .custom-header {
     color: white;
     background-color: lightsalmon;
     width: 100%;

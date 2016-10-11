@@ -1,8 +1,8 @@
 <!------------------- H T M L ------------------->
 
 <template>
-  <div class="custom-footer">
-    custom footer
+  <div class="page-about">
+    page about
   </div>
 </template>
 
@@ -11,13 +11,14 @@
 
 <script>
 
-  //  import S from './SongPlayer'
-  //  import dummy from './../dummy'
+//  import S from './SongPlayer'
+//  import dummy from './../dummy'
 
   export default {
     props: [],
 
-    components: {},
+    components: {
+    },
 
     data(){
       return {};
@@ -31,14 +32,7 @@
 
 <style lang="scss" scoped>
 
-  .custom-footer {
-    position: fixed;
-    bottom: 0;
-
-    color: white;
+  .page-about {
     background-color: lightsalmon;
-    width: 100%;
-    height: 200px;
   }
-
 </style>

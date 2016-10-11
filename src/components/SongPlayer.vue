@@ -42,9 +42,9 @@
 
 <script>
 
-    var url = require("file!./../assets/audio/audiodemo.mp3");
+  var url = require("file!./../assets/audio/audiodemo.mp3");
 
-    console.log('URL', url)
+  console.log('URL', url)
 
   export default {
 
@@ -116,11 +116,9 @@
 
 <style lang="scss" scoped>
 
-  /*@import './../assets/css/font-awesome/css/font-awesome-min.css';*/
   @import './../assets/font-awesome/css/font-awesome.css';
 
   .song-player {
-    /*background-color: lightsalmon;*/
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -131,23 +129,11 @@
     &.selected {
       background-color: #dcdcec;
       color: black;
-
       box-shadow: 0 3px 6px #191919;
-
-      /*box-shadow: 0 6px 6px #191919;*/
-      /*transition: all 0.3s ease-in-out;*/
-
-      /*&:hover {*/
-      /*background-color: #3d3d3d;*/
-      /*box-shadow: 2px 0px 5px 5px rgba(25, 25, 25, 0.75);*/
-
-      /*}*/
-
     }
 
     .button-ctn {
       display: flex;
-      /*background-color: red;*/
 
       .button {
         width: $span-width;
@@ -157,7 +143,6 @@
         align-items: center;
         justify-content: center;
 
-        /*background-color: aliceblue;*/
         border-radius: 50%;
 
         &.paused {
@@ -167,13 +152,7 @@
         .mark {
           user-select: none;
 
-          /*transition: 1.5s ease-in;*/
-
-          /*transform: scale(1.0);*/
-
           &:hover {
-            /*transform: scale(1.1);*/
-
           }
         }
       }
@@ -181,20 +160,16 @@
     }
 
     .song-title-ctn {
-      /*pointer-events: none;*/
       user-select: none;
 
       display: flex;
-      /*background-color: blue;*/
       font-size: 1.1em;
       letter-spacing: 2px;
       width: 100%;
 
       align-items: center;
-      /*justify-content: space-between;*/
 
       .track-duration {
-        /*flex: 1;*/
       }
       .track-name {
         width: 100%;

@@ -21,7 +21,7 @@
     - [ ] Header
     - [ ] Footer
 - [ ] layout breakpoints / media queries
-- [ ] page routing
+- [x] page routing
 - [ ] pure css parallax
 
 

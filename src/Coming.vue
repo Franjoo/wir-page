@@ -1,8 +1,30 @@
 <template>
-  <div id="coming">
+  <div id="app">
     <span>Coming Soon</span>
   </div>
 </template>
+
+
+<script>
+
+  export default {
+
+    components: {},
+
+    data: function () {
+      return {
+        dev: true
+      }
+
+    },
+
+    mounted: function () {
+      console.log('coming mounted', this)
+    }
+
+  }
+
+</script>
 
 <style lang="scss">
 
