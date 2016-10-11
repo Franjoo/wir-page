@@ -32,10 +32,15 @@
 <style lang="scss" scoped>
 
   .custom-header {
-    color: white;
     background-color: lightsalmon;
     width: 100%;
     height: 200px;
+
+    position: fixed;
+    top: 0;
+
+    z-index: -1;
+
   }
 
 </style>

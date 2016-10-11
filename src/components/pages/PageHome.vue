@@ -1,5 +1,5 @@
 <template>
-  <div id="page-home" :scroll="scrollFunction">
+  <div class="page-home" :scroll="scrollFunction">
     <!--<div id="app" v-on="scroll : onScroll">-->
 
 
@@ -96,7 +96,7 @@
 <style lang="scss">
 
 
-  #app {
+  .page-home {
     color: #ffffff;
     font-family: Source Sans Pro, Helvetica, sans-serif;
     font-weight: 300;
@@ -106,6 +106,8 @@
 
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
 
     position: relative;
 

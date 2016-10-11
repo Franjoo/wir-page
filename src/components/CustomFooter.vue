@@ -39,6 +39,8 @@
     background-color: lightsalmon;
     width: 100%;
     height: 200px;
+
+    z-index: -1;
   }
 
 </style>

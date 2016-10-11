@@ -1,17 +1,21 @@
 <template>
   <div id="app">
 
+    <!-- DEVELOPMENT WRAPPER -->
     <div v-if='comingPageRoute' class="development-ctn">
       coming soon
     </div>
 
+
+    <!-- PRODUCTION WRAPPER -->
     <div v-if='!comingPageRoute' class="production-ctn">
 
       <custom-header></custom-header>
 
-      <navigation></navigation>
 
       <div class="component-ctn">
+        <navigation></navigation>
+
         <router-view></router-view>
       </div>
 
@@ -86,6 +90,11 @@
 
       #app {
 
+        color: white;
+        font-family: Source Sans Pro, Helvetica, sans-serif;
+        font-weight: 100;
+
+
         .development-ctn {
           position: fixed;
           top: 0;
@@ -94,12 +103,8 @@
           right: 0;
           overflow: auto;
           background-color: #2b2b2b;
-          color: white;
           font-size: 3em;
-          font-family: Source Sans Pro, Helvetica, sans-serif;
-          font-weight: 100;
           letter-spacing: 3px;
-
           display: flex;
           flex-direction: column;
           width: 100%;
@@ -123,7 +128,14 @@
           }
 
           .component-ctn {
-            max-width: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            padding-top: 200px;
+            padding-bottom: 200px;
           }
 
         }
