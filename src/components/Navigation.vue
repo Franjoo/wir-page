@@ -4,7 +4,7 @@
 
   <div ref=nav class="navigation">
 
-    <span ref=heightBlocker class="height-blocker"></span>
+    <span ref=heightBlocker></span>
 
     <div ref=navWrapper class="nav-wrapper">
       <div ref=itemCtn class="navigation-ctn">
@@ -46,57 +46,37 @@
         let st = this.scrollPosition.scrollTop = window.scrollY;
         let sl = this.scrollPosition.scrollLeft = window.scrollX;
 
-        if (st <= 200) {
+        if (st <= 200) this.unfixHeader() // todo: get header offset
+        else this.fixHeader()
 
-          this.$refs.navWrapper.classList.remove('fixed');
-          this.$refs.heightBlocker.classList.remove('fixed');
+      },
 
-//          this.$refs.nav.style.top = (180 - st) + 'px';
+      fixHeader: function () {
+        this.$refs.navWrapper.classList.add('fixed');
+        this.$refs.heightBlocker.classList.add('fixed');
 
-//          for (var i = 0; i <this.$refs.itemCtn.children.length; i++) {
-//            var k = this.$refs.itemCtn.children[i].children[0];
-//            k.classList.remove('fixed')
-//          }
-
+        for (var i = 0; i < this.navItems.length; i++) {
+          var item = this.navItems[i];
+          item.children[0].classList.add('fixed')
         }
+      },
 
-        else {
-//          this.$refs.nav.style.top = 0;
+      unfixHeader: function () {
+        this.$refs.navWrapper.classList.remove('fixed');
+        this.$refs.heightBlocker.classList.remove('fixed');
 
-          this.$refs.navWrapper.classList.add('fixed');
-          this.$refs.heightBlocker.classList.add('fixed');
-
-
-//          for (var i = 0; i <this.$refs.itemCtn.children.length; i++) {
-//            var k = this.$refs.itemCtn.children[i].children[0];
-//            k.classList.add('fixed')
-//          }
-
-
-//          for (var i = 0; i < this.navItems.length; i++) {
-//            var i = this.navItems[i];
-//            i.classList.add('blaaaa');
-//
-//
-//          }
-
-
+        for (var i = 0; i < this.navItems.length; i++) {
+          var item = this.navItems[i];
+          item.children[0].classList.remove('fixed')
         }
-
-//        console.log(this.scrollPosition.scrollTop)
-
       }
     },
 
     mounted: function () {
       window.addEventListener('scroll', this.onScroll)
 
-
       this.navItems = this.$refs.nav.querySelectorAll('.item-ctn')
-
-      console.log('navItems', this.navItems, this.$refs.itemCtn.children)
-
-
+      console.log(this.navItems)
     }
   }
 
@@ -112,12 +92,6 @@
   .navigation {
 
     z-index: 2;
-    /*top: 180px;*/
-
-    /*position: fixed;*/
-    /*top: 200px;*/
-
-    /*margin-bottom: 20px;*/
     width: 100%;
 
     display: flex;
@@ -147,7 +121,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height:50px;
+        height: 50px;
 
         .item-ctn {
 
@@ -167,8 +141,5 @@
       }
     }
   }
-
-  /*margin: 5px*/
-
 
 </style>
