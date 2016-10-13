@@ -33,6 +33,7 @@
 
     data(){
       return {
+        fixedItems: [],
         navItems: [],
         scrollPosition: {
           scrollTop: 0,
@@ -46,37 +47,32 @@
         let st = this.scrollPosition.scrollTop = window.scrollY;
         let sl = this.scrollPosition.scrollLeft = window.scrollX;
 
-        if (st <= 200) this.unfixHeader() // todo: get header offset
-        else this.fixHeader()
+        if (st <= 200) this.toggleFixOnItems(false) // todo: get header offset
+        else this.toggleFixOnItems(true)
 
       },
 
-      fixHeader: function () {
-        this.$refs.navWrapper.classList.add('fixed');
-        this.$refs.heightBlocker.classList.add('fixed');
-
-        for (var i = 0; i < this.navItems.length; i++) {
-          var item = this.navItems[i];
-          item.children[0].classList.add('fixed')
+      toggleFixOnItems: function (fix) {
+        if (fix) {
+          for (var i = 0; i < this.fixedItems.length; i++) {
+            this.fixedItems[i].classList.add('fixed')
+          }
+        } else {
+          for (var i = 0; i < this.fixedItems.length; i++) {
+            this.fixedItems[i].classList.remove('fixed')
+          }
         }
       },
-
-      unfixHeader: function () {
-        this.$refs.navWrapper.classList.remove('fixed');
-        this.$refs.heightBlocker.classList.remove('fixed');
-
-        for (var i = 0; i < this.navItems.length; i++) {
-          var item = this.navItems[i];
-          item.children[0].classList.remove('fixed')
-        }
-      }
     },
 
     mounted: function () {
       window.addEventListener('scroll', this.onScroll)
 
-      this.navItems = this.$refs.nav.querySelectorAll('.item-ctn')
-      console.log(this.navItems)
+      // push items to be fixed
+      this.fixedItems.push(this.$refs.navWrapper, this.$refs.heightBlocker)
+      for (var i = 0; i < this.$refs.nav.querySelectorAll('.item-ctn').length; i++) {
+        this.fixedItems.push(this.navItems[i].children[0])
+      }
     }
   }
 
