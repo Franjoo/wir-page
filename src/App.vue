@@ -134,8 +134,10 @@
             justify-content: center;
             align-items: center;
 
-            padding-top: 200px;
-            padding-bottom: 200px;
+            margin-top: 200px;
+            margin-bottom: 200px;
+
+            background-color: #2b2b2b;
           }
 
         }
