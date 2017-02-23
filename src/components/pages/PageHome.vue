@@ -7,19 +7,30 @@
     <!--<div ref=bg class="bg" :style="{ transform: translation}"></div>-->
 
 
-    <countdown
-      :deadline='24/12/2016'
-    ></countdown>
+    <div class="entry-ctn">
+      <countdown
+        :deadline='24/12/2016'
+      ></countdown>
+    </div>
 
-    <mini-text></mini-text>
 
-    <simple-story></simple-story>
+    <div class="entry-ctn">
+      <mini-text></mini-text>
+    </div>
 
-    <image-viewer></image-viewer>
+    <div class="entry-ctn">
+      <simple-story></simple-story>
+    </div>
 
-    <artist
-      :scoped_player.sync=scoped_player
-    ></artist>
+    <div class="entry-ctn">
+      <image-viewer></image-viewer>
+    </div>
+
+    <div class="entry-ctn">
+      <artist
+        :scoped_player.sync=scoped_player
+      ></artist>
+    </div>
 
   </div>
 </template>
@@ -91,6 +102,7 @@
     }
 
   };
+
 </script>
 
 <style lang="scss">
@@ -107,7 +119,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 
     position: relative;
 

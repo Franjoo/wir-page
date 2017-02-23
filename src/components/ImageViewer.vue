@@ -1,13 +1,13 @@
 <!------------------- H T M L ------------------->
 
 <template>
-  <div class="image-viewer">
+  <div class="image-viewer" :style="{ height: height + 'px' }">
 
     <!--IMAGE ROW-->
     <div class="image-row">
       <div v-for="(i, index) in a.images" class="img-container" :style="{ transform: translation}">
         <div class="image-wrapper">
-          <div class="thumbnail">
+          <div class="thumbnail" :style="{ height: height + 'px' }">
             <!--<img :src="'./../assets/photos/album_demo/' + i.path" alt="Image"/>-->
             <img :src="rootPath + '/' + i.path" alt="Image"/>
             <!--<img :src="" alt="Image"/>-->
@@ -39,15 +39,15 @@
   import dummy from './../dummy'
   //  require('./../assets/photos/album_demo/*')
   //  import './../assets/photos/album_demo'
-//
-//      var req = require.context("../assets/photos/album_demo", true, /^(.*\.(jpg$))[^.]*$/igm);
-//  //    var req = require.context("../assets/photos/album_demo", true);
-//      req.keys().forEach(function(key){
-//        req(key);
-//      });
+  //
+  //      var req = require.context("../assets/photos/album_demo", true, /^(.*\.(jpg$))[^.]*$/igm);
+  //  //    var req = require.context("../assets/photos/album_demo", true);
+  //      req.keys().forEach(function(key){
+  //        req(key);
+  //      });
 
   export default {
-    props: [],
+    props: ['album', 'slideshow', 'height'],
 
 
     components: {},
@@ -72,7 +72,7 @@
       },
 
       translation: function () {
-        let current = this.current * 200
+        let current = this.current * this.height
         return 'translateY(-' + current + 'px)';
       }
     },
@@ -128,7 +128,9 @@
 
       var self = this
 
-//      self.startSlideshow();
+      this.a = this.album || this.a
+
+      if(this.slideshow) self.startSlideshow();
 
     }
 
@@ -141,7 +143,6 @@
 <style lang="scss" scoped>
 
   @import "../styles/constants";
-
   @import './../assets/font-awesome/css/font-awesome.css';
 
   .image-viewer {

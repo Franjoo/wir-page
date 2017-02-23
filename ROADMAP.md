@@ -12,6 +12,7 @@
 ## version: 0.5
 - [ ] component routing with scroll (/music/$artist)
 - [ ] Impressum / AGBs
+- [ ] page transition effect
 
 
 ## version: 0.4
@@ -23,6 +24,7 @@
 - [ ] layout breakpoints / media queries
 - [x] page routing
 - [ ] pure css parallax
+
 
 
 ## version: 0.3

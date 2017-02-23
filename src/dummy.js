@@ -161,6 +161,22 @@ export default {
 
   },
 
+  headerAlbums: {
+    'home': [{path: 'header_1.jpg'}, {path: 'demo_2.jpg'}],
+    'music': [{path: 'demo_2.jpg'}, {path: 'demo_3.jpg'}],
+    'about': [{path: 'demo_5.jpg'}, {path: 'demo_4.jpg'}]
+  },
+
+  albumHeader: {
+    name: 'demo',
+    title: 'Example Album',
+    images: [
+      {title: 'demo 1', path: 'demo_1.jpg'},
+      {title: 'demo 6', path: 'demo_6.jpg'},
+    ]
+
+  },
+
   story: {
     name: 'demo',
     title: 'A Demo Story',
@@ -194,8 +210,8 @@ export default {
 
   countdown: {
     // date: '24/12/2016',
-    date: 'December 24,2016',
-    event: 'Die Letzte Wiese'
+    date: 'August 04,2017',
+    event: 'Uckeralm Festival 2017'
   }
 
 }

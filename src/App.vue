@@ -10,13 +10,19 @@
     <!-- PRODUCTION WRAPPER -->
     <div v-if='!comingPageRoute' class="production-ctn">
 
-      <custom-header></custom-header>
+      <custom-header
+        :height=headerHeight
+        :album=headerAlbum
+      ></custom-header>
 
 
-      <div class="component-ctn">
-        <navigation></navigation>
+      <div class="component-ctn" :style="{ marginTop: marginForHeader + 'px' }">
+        <navigation
+          :marginForHeader=headerHeight
+        >
+        </navigation>
 
-        <router-view></router-view>
+        <router-view class="blog-column" transition="fade" transition-mode="out-in"></router-view>
       </div>
 
       <custom-footer></custom-footer>
@@ -32,6 +38,9 @@
   import CustomHeader from './components/CustomHeader.vue';
   import CustomFooter from './components/CustomFooter.vue';
 
+  import dummy from './dummy'
+
+
   export default {
 
     components: {
@@ -40,6 +49,9 @@
 
     data: function () {
       return {
+        headerAlbum: dummy.headerAlbums['home'],
+        marginForHeader: 0,
+        headerHeight: 0,
         dev: true,
         scoped_player: null,
         scrollPosition: {
@@ -67,6 +79,11 @@
 
       comingPageRoute: function () {
         return this.$route.fullPath === "/"
+      },
+
+      headerAlbum: function(){
+        return 'home'
+//        return this.$route.fullPath
       }
     },
 
@@ -74,13 +91,21 @@
       console.log('app mounted', this)
 //      this.dev = env.dev
 //            window.addEventListener('scroll', this.onScroll)
+
+      this.headerHeight = this.marginForHeader = 400
+
     }
 
   };
+
+
+
+
 </script>
 
 <style lang="scss">
 
+  @import 'styles/all';
 
   html {
     height: 100%;
@@ -94,6 +119,7 @@
         font-family: Source Sans Pro, Helvetica, sans-serif;
         font-weight: 100;
 
+        /*pointer-events: none;*/
 
         .development-ctn {
           position: fixed;
@@ -121,7 +147,11 @@
           justify-content: center;
           align-items: center;
 
+          /*pointer-events: none;*/
+
           .header {
+
+            pointer-events: all;
             width: 100%;
             background: darkgreen;
             height: 200px;
@@ -129,18 +159,56 @@
 
           .component-ctn {
             width: 100%;
+            pointer-events: all;
+
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
 
-            margin-top: 200px;
             margin-bottom: 200px;
 
             background-color: #2b2b2b;
+
+            .blog-column {
+              pointer-events: all;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              padding: 10px;
+
+              /*background-color: #9b9b9b;*/
+            }
+
           }
 
         }
+
+        .blog-column {
+          width: 100%;
+          margin: 50px;
+
+          @media #{$sm}{
+            width: $sm-bp
+          }
+
+          @media #{$md}{
+            width: $md-bp
+          }
+
+          @media #{$lg}{
+            width: $lg-bp
+          }
+        }
+
+        .entry-ctn{
+          width: 100%;
+          padding: 50px;
+          background-color: #dcdcec;
+          margin-top: 20px;
+        }
+
       }
     }
   }

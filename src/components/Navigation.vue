@@ -27,14 +27,14 @@
   import dummy from './../dummy'
 
   export default {
-    props: [],
+    props: ['marginForHeader'],
 
     components: {},
 
     data(){
       return {
+//        marginForHeader:0,
         fixedItems: [],
-        navItems: [],
         scrollPosition: {
           scrollTop: 0,
           scrollLeft: 0,
@@ -47,7 +47,7 @@
         let st = this.scrollPosition.scrollTop = window.scrollY;
         let sl = this.scrollPosition.scrollLeft = window.scrollX;
 
-        if (st <= 200) this.toggleFixOnItems(false) // todo: get header offset
+        if (st <= this.marginForHeader) this.toggleFixOnItems(false) // todo: get header offset
         else this.toggleFixOnItems(true)
 
       },
@@ -71,8 +71,9 @@
       // push items to be fixed
       this.fixedItems.push(this.$refs.navWrapper, this.$refs.heightBlocker)
       for (var i = 0; i < this.$refs.nav.querySelectorAll('.item-ctn').length; i++) {
-        this.fixedItems.push(this.navItems[i].children[0])
+        this.fixedItems.push(this.$refs.nav.querySelectorAll('.item-ctn')[i].children[0]) // todo: optimize
       }
+
     }
   }
 
@@ -125,7 +126,7 @@
             margin-left: 15px;
             margin-right: 15px;
 
-            transition: all 0.3s ease;
+            transition: margin 0.3s ease-out;
 
             &.fixed {
               margin-left: 30px;
