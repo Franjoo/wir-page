@@ -114,6 +114,7 @@
 
     body {
       margin: 0 !important;
+      pointer-events: none;
 
       #app {
 
@@ -153,7 +154,6 @@
 
           .header {
 
-            pointer-events: all;
             width: 100%;
             background: darkgreen;
             height: 200px;
@@ -167,7 +167,7 @@
             flex-direction: column;
             align-items: center;
 
-            margin-bottom: 200px;
+            margin-bottom: 280px;
 
             background-color: $color-content-background;
 

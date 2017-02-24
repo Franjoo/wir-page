@@ -87,6 +87,7 @@
   @import "./../styles/all";
 
   .navigation {
+    pointer-events: all;
 
     z-index: 2;
     width: 100%;

@@ -14,6 +14,7 @@
 - [ ] Impressum / AGBs
 - [ ] page transition effect
 - [ ] image fullscreen modal
+- [ ] blog archive pagination
 
 
 ## version: 0.4
