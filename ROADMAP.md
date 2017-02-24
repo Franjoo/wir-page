@@ -25,6 +25,8 @@
     - [ ] Footer
 - [ ] layout breakpoints / media queries
 - [x] page routing
+- [ ] dummy 'Über Uns' page
+- [ ] dummy 'Blog' page
 - [ ] pure css parallax
 
 
