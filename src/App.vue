@@ -168,7 +168,7 @@
 
             margin-bottom: 200px;
 
-            background-color: #f6f6f6;
+            background-color: $color-content-background;
 
             .blog-column {
               pointer-events: all;
@@ -205,8 +205,9 @@
 
         .entry-ctn {
           width: 100%;
-          padding: 20px;
-          background-color: #dcdcec;
+          /*padding: 20px;*/
+          background-color: $color-entry;
+          color: #444444;
           margin-top: 20px;
 
           box-shadow:  0 14px 25px -8px #191919;

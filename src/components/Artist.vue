@@ -81,7 +81,6 @@
 
     .artist-ctn {
 
-      background-color: #2c3e50;
       display: flex;
       flex-direction: column-reverse;
       padding: 20px;
