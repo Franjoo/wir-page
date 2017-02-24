@@ -90,6 +90,10 @@
 
     z-index: 2;
     width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: -20px; // fixme: dangerous
 
     display: flex;
     flex-direction: row;
@@ -108,6 +112,8 @@
       background-color: $color-primary;
       width: 100%;
 
+      box-shadow: 0 0 13px 5px #191919, 0 0 13px -5px #191919;
+
       &.fixed {
         position: fixed;
         top: 0;
@@ -119,6 +125,11 @@
         justify-content: center;
         align-items: center;
         height: 50px;
+
+        /**box-shadow: 0 14px 25px -8px #191919, 0 -14px 25px -8px #191919;*/
+
+       /** box-shadow: 0 25px 25px #191919; */
+
 
         .item-ctn {
 

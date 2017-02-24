@@ -77,9 +77,7 @@
 
   .artist {
     width: 100%;
-    margin-bottom: 50px;
     user-select: none;
-
 
     .artist-ctn {
 

@@ -146,7 +146,7 @@
   @import './../assets/font-awesome/css/font-awesome.css';
 
   .image-viewer {
-    margin-bottom: $comp-margin-bottom;
+
 
     background-color: lightsalmon;
     height: 200px;

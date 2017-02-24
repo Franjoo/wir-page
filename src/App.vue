@@ -101,6 +101,7 @@
 
 
 
+
 </script>
 
 <style lang="scss">
@@ -167,7 +168,7 @@
 
             margin-bottom: 200px;
 
-            background-color: #2b2b2b;
+            background-color: #f6f6f6;
 
             .blog-column {
               pointer-events: all;
@@ -202,11 +203,15 @@
           }
         }
 
-        .entry-ctn{
+        .entry-ctn {
           width: 100%;
-          padding: 50px;
+          padding: 20px;
           background-color: #dcdcec;
           margin-top: 20px;
+
+          box-shadow:  0 14px 25px -8px #191919;
+          /**box-shadow: 0 6px 4px -4px black;*/
+
         }
 
       }

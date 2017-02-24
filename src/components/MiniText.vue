@@ -65,7 +65,6 @@
     font-size: 22px;
     /*background-color: lightsalmon;*/
 
-    margin-bottom: 20px;
     letter-spacing: 1px;
     font-weight: 100;
 

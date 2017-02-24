@@ -110,7 +110,7 @@
 
         /*<!--padding: $padding-story;-->*/
 
-        margin-bottom: $comp-margin-bottom;
+
         background-color: #2c3e50;
 
         .title {

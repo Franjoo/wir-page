@@ -110,7 +110,7 @@
     z-index: -1;
     overflow: hidden;
 
-    margin-bottom: $comp-margin-bottom;
+
 
     .img-overlay {
       width: 100%;
@@ -166,7 +166,7 @@
       right: 0;
       bottom: 0;
 
-      box-shadow: inset 0 14px 25px -8px #191919, inset 0 -14px 25px -8px #191919;
+      //** box-shadow: inset 0 14px 25px -8px #191919, inset 0 -14px 25px -8px #191919;*/
 
     }
 
