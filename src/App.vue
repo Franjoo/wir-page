@@ -102,6 +102,7 @@
 
 
 
+
 </script>
 
 <style lang="scss">
@@ -188,7 +189,6 @@
 
         .blog-column {
           width: 100%;
-          margin: 50px;
 
           @media #{$sm}{
             width: $sm-bp
@@ -207,11 +207,15 @@
           width: 100%;
           /*padding: 20px;*/
           background-color: $color-entry;
-          color: #444444;
+          color: $color-font-secondary;
           margin-top: 20px;
 
-          box-shadow:  0 14px 25px -8px #191919;
+          box-shadow: 0 14px 25px -8px #191919;
           /**box-shadow: 0 6px 4px -4px black;*/
+
+          .blog {
+            margin: 15px;
+          }
 
         }
 

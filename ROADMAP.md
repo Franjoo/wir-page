@@ -13,6 +13,7 @@
 - [ ] component routing with scroll (/music/$artist)
 - [ ] Impressum / AGBs
 - [ ] page transition effect
+- [ ] image fullscreen modal
 
 
 ## version: 0.4

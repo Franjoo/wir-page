@@ -1,7 +1,7 @@
 <!------------------- H T M L ------------------->
 
 <template>
-  <div class="image-viewer" :style="{ height: height + 'px' }">
+  <div class="image-viewer blog" :style="{ height: height + 'px' }">
 
     <!--IMAGE ROW-->
     <div class="image-row">
@@ -150,7 +150,6 @@
 
     background-color: lightsalmon;
     height: 200px;
-    width: 100%;
     position: relative;
 
     overflow: hidden;

@@ -1,7 +1,7 @@
 <!------------------- H T M L ------------------->
 
 <template>
-    <div class="simple-story">
+    <div class="simple-story blog">
         <span class="title">{{s.title}}</span>
         <div ref=story class='story-ctn' :class="[twoRows ? 'two-rows' : '']">
             <div class="content-ctn" v-for="(c, index) in s.content" :class="[twoRows ? 'two-rows' : '']">
@@ -94,24 +94,11 @@
 
     .simple-story {
 
-        $width-ctn: calc(100%);
-        /*<!--$width-ctn: 770px;-->*/
-        /*<!--$width-ctn: 560px;-->*/
+      $width-ctn:100%;
+
         $margin-ctn: 10px;
         $margin-span: 10px;
         $padding-story: 15px;
-
-        text-align: left;
-
-        color: white;
-
-        /*width: 100%;*/
-        width: $width-ctn;
-
-        /*<!--padding: $padding-story;-->*/
-
-
-        background-color: #2c3e50;
 
         .title {
             font-size: 32px;

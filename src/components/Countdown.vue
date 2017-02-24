@@ -1,7 +1,7 @@
 <!------------------- H T M L ------------------->
 
 <template>
-  <div class="countdown">
+  <div class="countdown blog">
 
     <div class="time-ctn">
 
@@ -121,7 +121,6 @@
   @import '../styles/all';
 
   .countdown {
-    background-color: #2c3e50;
     width: 100%;
     height: 100px;
 

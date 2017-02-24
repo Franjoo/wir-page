@@ -2,7 +2,7 @@
 
 <template>
 
-  <div ref=nav class="navigation">
+  <div ref=nav class="navigation blog">
 
     <span ref=heightBlocker></span>
 

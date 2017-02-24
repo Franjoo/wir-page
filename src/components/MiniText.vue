@@ -1,7 +1,7 @@
 <!------------------- H T M L ------------------->
 
 <template>
-  <div class="mini-text">
+  <div class="mini-text blog">
 
     <div class="text">
 

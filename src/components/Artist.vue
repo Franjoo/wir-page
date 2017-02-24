@@ -1,7 +1,7 @@
 <!------------------- H T M L ------------------->
 
 <template>
-  <div class="artist">
+  <div class="artist blog">
     <div class="artist-ctn">
 
       <!--LEFT-->
