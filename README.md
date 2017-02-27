@@ -1,26 +1,53 @@
 # wir-page
 
-[ROADMAP](ROADMAP.md)
+<!--[ROADMAP](ROADMAP.md)-->
+# Roadmap
 
-> wir-page
+## version: 0.7
+- [ ] google analytics
 
-## Build Setup
 
-``` bash
-# install dependencies
-npm install
+## version: 0.6
+- [ ] facebook integration
+- [ ] beatport integration
 
-# serve with hot reload at localhost:8080
-npm run dev
 
-# build for production with minification
-npm run build
+## version: 0.5
+- [ ] components
+    - [ ] ImageGrid
+    - [ ] StickyNavigation
+- [ ] content complete
+- [ ] component routing with scroll (/music/$artist)
+- [ ] Impressum / AGBs
+- [ ] page transition effect
+- [ ] image fullscreen modal
+- [ ] blog archive pagination
 
-# run unit tests
-npm run unit
 
-# run all tests
-npm test
-```
+## version: 0.4
+- [ ] components
+    - [ ] Header
+    - [ ] Footer
+    - [ ] SingleImage
+- [x] layout breakpoints / media queries
+- [x] page routing
+- [ ] dummy 'Über Uns' page
+- [ ] dummy 'Blog' page
+- [ ] pure css parallax
+- [x] page background pattern
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+## version: 0.3
+Date: 10/10/16
+
+- [x] components (prototype)
+    - [x] SongPlayer
+    - [x] Story
+    - [x] MiniText
+    - [x] ImageViewer
+    - [x] Countdown
+    - [x] Artist
+* [x] webpack config
+* [x] static files
+* [x] mp3 track download
