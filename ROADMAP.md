@@ -25,6 +25,7 @@
 - [ ] components
     - [ ] Header
     - [ ] Footer
+    - [ ] SingleImage
 - [x] layout breakpoints / media queries
 - [x] page routing
 - [ ] dummy 'Über Uns' page

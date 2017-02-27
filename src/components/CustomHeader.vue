@@ -39,8 +39,11 @@
   import ImageViewer from './ImageViewer';
 
 
+  // push
+
   export default {
     props: ['height', 'album'],
+
 
     components: {
       ImageViewer
