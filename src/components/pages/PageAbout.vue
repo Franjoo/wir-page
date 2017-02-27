@@ -29,6 +29,25 @@
         <p> Und apropos: Das Reh ist nicht das Kind vom Hirsch. </p>
       </div>
     </div>
+
+
+    <div class="entry-ctn">
+      <div class="blog">
+
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -58,6 +77,8 @@
 
 
 
+
+
 </script>
 
 
@@ -67,14 +88,17 @@
 
   @import "../../styles/all";
 
-
   .page-about {
     /*background-color: lightsalmon;*/
     font-size: 18px;
 
-    .entry-ctn {
+    :first-child.entry-ctn {
       margin-top: 0 !important;
+    }
 
+
+    :last-child.entry-ctn {
+      margin-bottom: 40px !important;
     }
   }
 </style>

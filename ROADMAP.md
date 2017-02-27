@@ -10,6 +10,10 @@
 
 
 ## version: 0.5
+- [ ] components
+    - [ ] ImageGrid
+    - [ ] StickyNavigation
+- [ ] content complete
 - [ ] component routing with scroll (/music/$artist)
 - [ ] Impressum / AGBs
 - [ ] page transition effect
@@ -19,15 +23,14 @@
 
 ## version: 0.4
 - [ ] components
-    - [ ] ImageGrid
-    - [ ] StickyNavigation
     - [ ] Header
     - [ ] Footer
-- [ ] layout breakpoints / media queries
+- [x] layout breakpoints / media queries
 - [x] page routing
 - [ ] dummy 'Über Uns' page
 - [ ] dummy 'Blog' page
 - [ ] pure css parallax
+- [x] page background pattern
 
 
 

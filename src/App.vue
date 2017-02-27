@@ -108,6 +108,8 @@
 <style lang="scss">
 
   @import 'styles/all';
+  @import 'styles/patternbolt';
+
 
   html {
     height: 100%;
@@ -123,6 +125,7 @@
         font-weight: 100;
 
         /*pointer-events: none;*/
+
 
         .development-ctn {
           position: fixed;
@@ -160,6 +163,20 @@
           }
 
           .component-ctn {
+
+            /*background pattern*/
+            $pattern : 'lines-45-b';
+            $background-size : 10px;
+            $background-color : #3a3a3a;
+            $foreground-color : #191919;
+
+
+            /*@mixin pb($pattern, $background-size, $background-color, $foreground-color, $opacity, $mask){}-->*/
+
+
+            @include pb($pattern, $background-size, $background-color, $foreground-color);
+
+
             width: 100%;
             pointer-events: all;
 
@@ -168,8 +185,11 @@
             align-items: center;
 
             margin-bottom: 280px;
+            margin-top: 300px;
 
             background-color: $color-content-background;
+
+
 
             .blog-column {
               pointer-events: all;
@@ -189,6 +209,7 @@
 
         .blog-column {
           width: 100%;
+          margin-bottom: 40px;
 
           @media #{$sm}{
             width: $sm-bp

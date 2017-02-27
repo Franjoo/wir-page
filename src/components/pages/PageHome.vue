@@ -6,6 +6,16 @@
     <!--<div class="bg" :style="{ 'background-image': 'url(' + assets/birke.jpg + ')' }"></div>-->
     <!--<div ref=bg class="bg" :style="{ transform: translation}"></div>-->
 
+    <!--hearthis custom-->
+    <div class="entry-ctn">
+      <iframe scrolling="no" id="hearthis_at_track_484468" width="100%" height="130"
+              src="https://hearthis.at/embed/484468/transparent/?hcolor=&color=&style=2&block_size=2&block_space=4&background=0&waveform=0&cover=1&autoplay=0&css="
+              frameborder="0" allowtransparency><p>Listen to <a
+        href="https://hearthis.at/rauschzeit/085-luce-bree-rauschzeit-mix-show/" target="_blank">#085 Luce Bree -
+        Rauschzeit Mix Show</a> <span>by</span><a href="https://hearthis.at/rauschzeit/" target="_blank">Rauschzeit</a>
+        <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p></iframe>
+    </div>
+
     <!--hearthis-->
     <div class="entry-ctn">
       <iframe scrolling="no" id="hearthis_at_track_557594" width="100%" height="150"
@@ -24,7 +34,8 @@
 
     <!--soundcloud - playlist-->
     <div class="entry-ctn">
-    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2645379&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+      <iframe width="100%" height="450" scrolling="no" frameborder="no"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2645379&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
     </div>
 
 
@@ -124,6 +135,7 @@
     }
 
   };
+
 
 
 
