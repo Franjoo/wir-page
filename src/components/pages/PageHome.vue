@@ -59,11 +59,11 @@
       <image-viewer></image-viewer>
     </div>
 
-    <div class="entry-ctn">
-      <artist
-        :scoped_player.sync=scoped_player
-      ></artist>
-    </div>
+    <!--<div class="entry-ctn">-->
+      <!--<artist-->
+        <!--:scoped_player.sync=scoped_player-->
+      <!--&gt;</artist>-->
+    <!--</div>-->
 
   </div>
 </template>

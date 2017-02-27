@@ -8,7 +8,10 @@
       <div class="image-wrapper">
         <div class="thumbnail" :style="{ height: height + 'px' }">
 
-          <img :src="rootPath + '/' + album.path" alt="Image"/>
+          <!--<img :src="rootPath + '/' + album.path" alt="Image"/>-->
+          <!--<img :src="rootPath + '/' + album.path" alt="Image"/>-->
+          <img :src="'././static/photos/album_demo/demo_1.jpg'" alt="Image"/>
+
 
         </div>
       </div>
@@ -55,7 +58,11 @@
 
     computed: {
       rootPath: function () {
-        return './static/photos/album_' + this.album.name
+
+
+               return '././static/photos/album_' + this.album.name
+
+       //  return '././static/photos/album_header/home/header_1.jpg'
       },
 
     },
@@ -91,6 +98,8 @@
     }
   }
 
+
+
 </script>
 
 
@@ -109,8 +118,6 @@
     top: 0;
     z-index: -1;
     overflow: hidden;
-
-
 
     .img-overlay {
       width: 100%;
