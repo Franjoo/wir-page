@@ -29,10 +29,10 @@
     - [ ] Header
     - [ ] Footer
     - [ ] SingleImage
+    - [ ] SingleVideo
 - [x] layout breakpoints / media queries
 - [x] page routing
-- [ ] dummy 'Über Uns' page
-- [ ] dummy 'Blog' page
+- [x] 'Über Uns' page
 - [ ] pure css parallax
 - [x] page background pattern
 

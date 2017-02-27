@@ -10,7 +10,7 @@
 
           <!--<img :src="rootPath + '/' + album.path" alt="Image"/>-->
           <!--<img :src="rootPath + '/' + album.path" alt="Image"/>-->
-          <img :src="'././static/photos/album_demo/demo_1.jpg'" alt="Image"/>
+          <img :src="'././static/photos/album_header/header_1.jpg'" alt="Image"/>
 
 
         </div>
@@ -111,6 +111,7 @@
 <style lang="scss" scoped>
 
   @import "../styles/constants";
+  @import "../styles/all";
   @import './../assets/font-awesome/css/font-awesome.css';
 
   .custom-header {
@@ -161,7 +162,7 @@
           position: absolute;
           left: 50%;
           top: 50%;
-          width: auto;
+          width: 100%;
 
           transform: translate(-50%, -50%);
 
