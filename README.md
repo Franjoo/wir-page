@@ -22,6 +22,7 @@
 - [ ] page transition effect
 - [ ] image fullscreen modal
 - [ ] blog archive pagination
+- [ ] entry container decoration
 
 
 ## version: 0.4

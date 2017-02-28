@@ -209,7 +209,7 @@
               justify-content: center;
               align-items: center;
 
-              padding: 10px;
+              /*padding: 10px;*/
 
               /*background-color: #9b9b9b;*/
             }
@@ -231,7 +231,7 @@
           }
 
           @media #{$lg}{
-            width: $lg-bp
+            width: $md-bp
           }
         }
 

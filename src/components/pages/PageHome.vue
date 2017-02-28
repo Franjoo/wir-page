@@ -8,7 +8,11 @@
 
     <!--hearthis custom-->
 
-
+    <div class="entry-ctn">
+      <single-image
+        :path='test123'
+      ></single-image>
+    </div>
 
     <div class="entry-ctn">
 
@@ -49,6 +53,7 @@
   import ImageGrid from './../ImageGrid';
   import Countdown from './../Countdown';
   import Navigation from './../Navigation.vue';
+  import SingleImage from './../SingleImage.vue';
   //import 'bourbon'
 
 
@@ -56,7 +61,7 @@
 
 
     components: {
-      Artist, ImageViewer, SimpleStory, ImageGrid, MiniText, Countdown, Navigation
+      Artist, ImageViewer, SimpleStory, ImageGrid, MiniText, Countdown, Navigation, SingleImage
     },
 
 
