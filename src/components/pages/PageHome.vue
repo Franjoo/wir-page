@@ -9,6 +9,12 @@
     <!--hearthis custom-->
 
     <div class="entry-ctn">
+      <single-video
+        :path='test123'
+      ></single-video>
+    </div>
+
+    <div class="entry-ctn">
       <single-image
         :path='test123'
       ></single-image>
@@ -54,6 +60,7 @@
   import Countdown from './../Countdown';
   import Navigation from './../Navigation.vue';
   import SingleImage from './../SingleImage.vue';
+  import SingleVideo from './../SingleVideo.vue';
   //import 'bourbon'
 
 
@@ -61,7 +68,7 @@
 
 
     components: {
-      Artist, ImageViewer, SimpleStory, ImageGrid, MiniText, Countdown, Navigation, SingleImage
+      Artist, ImageViewer, SimpleStory, ImageGrid, MiniText, Countdown, Navigation, SingleImage, SingleVideo
     },
 
 

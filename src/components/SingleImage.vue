@@ -16,7 +16,7 @@
 //  import dummy from './../dummy'
 
   export default {
-    props: [],
+    props: ['path'],
 
     components: {
     },

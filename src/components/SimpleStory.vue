@@ -131,6 +131,9 @@
                 }
 
                 video {
+
+                  display: none; // fixme
+
                     margin: $margin-span;
                     width: $width-ctn / 2 - (2 * $margin-span);
                     object-fit: inherit;
