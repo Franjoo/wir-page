@@ -42,7 +42,6 @@
 
   //    require('vue-scroll')
 
-  import Hello from './../Hello';
   import Artist from './../Artist';
   import MiniText from './../MiniText';
   import SimpleStory from './../SimpleStory';
@@ -57,9 +56,7 @@
 
 
     components: {
-      Hello, Artist, ImageViewer, SimpleStory, ImageGrid, MiniText, Countdown, Navigation
-//        Hello, ImageViewer,
-//    SimpleStory
+      Artist, ImageViewer, SimpleStory, ImageGrid, MiniText, Countdown, Navigation
     },
 
 
@@ -119,27 +116,6 @@
   /*@import "../../styles/all";*/
 
   .page-home {
-    /*color: #ffffff;*/
-    /*font-family: Source Sans Pro, Helvetica, sans-serif;*/
-    /*font-weight: 300;*/
-
-    /*width: 100%;*/
-    /*height: 100%;*/
-
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*flex-direction: column;*/
-
-    /*position: relative;*/
-
-    /*.component-ctn {*/
-      /*display: flex;*/
-
-      /*flex-direction: column;*/
-      /*max-width: 800px;*/
-
-      /*justify-content: center;*/
-    /*}*/
 
     .bg {
       width: 100%;

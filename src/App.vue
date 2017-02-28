@@ -16,7 +16,7 @@
       ></custom-header>
 
 
-      <div class="component-ctn" :style="{ marginTop: marginForHeader + 'px' }">
+      <div class="component-ctn" :style="{ marginTop: marginForHeader + 'vh' }">
         <navigation
           :marginForHeader=headerHeight
         >
@@ -99,7 +99,7 @@
      // this.headerHeight = this.marginForHeader = window.height
     //  console.log('screenheight', this.headerHeight)
 
-          this.headerHeight = this.marginForHeader = 800
+          this.headerHeight = this.marginForHeader = 70
 
       console.log('document', document.getElementById('app'))
 

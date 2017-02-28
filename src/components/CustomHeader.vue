@@ -2,15 +2,15 @@
 
 <template>
 
-  <div class="custom-header" :style="{ height: height + 'px' }">
+  <div class="custom-header" :style="{ height: height + 'vh' }">
 
     <div class="img-container">
       <div class="image-wrapper">
-        <div class="thumbnail" :style="{ height: height + 'px' }">
+        <div class="thumbnail" :style="{ height: height + 'vh' }">
 
           <!--<img :src="rootPath + '/' + album.path" alt="Image"/>-->
           <!--<img :src="rootPath + '/' + album.path" alt="Image"/>-->
-          <img :src="'././static/photos/album_header/header_1.jpg'" alt="Image"/>
+          <img :src="'././static/photos/album_header/header_4.jpg'" alt="Image"/>
 
 
         </div>
@@ -163,8 +163,11 @@
           left: 50%;
           top: 50%;
           width: 100%;
+          height: 100%;
+          object-fit: cover;
 
           transform: translate(-50%, -50%);
+
 
         }
       }
