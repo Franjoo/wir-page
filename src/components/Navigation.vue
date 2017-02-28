@@ -47,8 +47,6 @@
         let st = this.scrollPosition.scrollTop = window.scrollY;
         let sl = this.scrollPosition.scrollLeft = window.scrollX;
 
-//        console.log(st,document.documentElement.clientHeight * 0.7, this.marginForHeader)
-
 //        if (st <= this.marginForHeader) this.toggleFixOnItems(false) // todo: get header offset
         if (st <= document.documentElement.clientHeight * (this.marginForHeader / 100)) this.toggleFixOnItems(false) // todo: get header offset
         else this.toggleFixOnItems(true)
