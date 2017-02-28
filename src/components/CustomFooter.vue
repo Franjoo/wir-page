@@ -91,6 +91,7 @@
   .custom-footer {
     position: fixed;
     bottom: 0;
+    left:0;
     pointer-events: all;
 
     color: white;
