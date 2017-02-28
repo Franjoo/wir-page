@@ -25,6 +25,8 @@
         <router-view class="blog-column" transition="fade" transition-mode="out-in"></router-view>
       </div>
 
+      <!--<img :src="'././static/dummy.svg'" alt="Image"/>-->
+
       <custom-footer></custom-footer>
 
     </div>
@@ -88,11 +90,19 @@
     },
 
     mounted: function () {
-      console.log('app mounted', this)
+      console.log('app mounted', this, document)
 //      this.dev = env.dev
 //            window.addEventListener('scroll', this.onScroll)
 
-      this.headerHeight = this.marginForHeader = 400
+
+
+     // this.headerHeight = this.marginForHeader = window.height
+    //  console.log('screenheight', this.headerHeight)
+
+          this.headerHeight = this.marginForHeader = 800
+
+      console.log('document', document.getElementById('app'))
+
 
     }
 
@@ -105,7 +115,7 @@
 
 </script>
 
-<style lang="scss">
+<style lang="scss" rel="stylesheet/scss">
 
   @import 'styles/all';
   @import 'styles/patternbolt';
@@ -138,6 +148,7 @@
           font-size: 3em;
           letter-spacing: 3px;
           display: flex;
+
           flex-direction: column;
           width: 100%;
           justify-content: center;

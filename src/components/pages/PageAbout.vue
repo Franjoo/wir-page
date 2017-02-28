@@ -84,12 +84,11 @@
 
 <!------------------ S T Y L E ------------------>
 
-<style lang="scss" scoped>
+<style lang="scss" rel="stylesheet/scss" scoped>
 
   @import "../../styles/all";
 
   .page-about {
-    /*background-color: lightsalmon;*/
     font-size: 18px;
 
     :first-child.entry-ctn {

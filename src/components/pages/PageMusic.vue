@@ -3,9 +3,6 @@
 <template>
   <div class="page-music">
 
-
-    page music
-
     <div class="entry-ctn">
       <iframe scrolling="no" id="hearthis_at_track_484468" width="100%" height="130"
               src="https://hearthis.at/embed/484468/transparent/?hcolor=&color=&style=2&block_size=2&block_space=4&background=0&waveform=0&cover=1&autoplay=0&css="
@@ -65,7 +62,7 @@
 
 <!------------------ S T Y L E ------------------>
 
-<style lang="scss" scoped>
+<style lang="scss" rel="stylesheet/scss" scoped>
 
 
   .page-music {

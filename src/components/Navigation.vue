@@ -82,7 +82,7 @@
 
 <!------------------ S T Y L E ------------------>
 
-<style lang="scss" scoped>
+<style lang="scss" rel="stylesheet/scss" scoped>
 
   @import "./../styles/all";
 

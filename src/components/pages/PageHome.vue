@@ -17,7 +17,6 @@
       ></countdown>
     </div>
 
-
     <div class="entry-ctn">
       <mini-text></mini-text>
     </div>
@@ -114,7 +113,7 @@
 
 </script>
 
-<style lang="scss">
+<style lang="scss" rel="stylesheet/scss">
 
 
   /*@import "../../styles/all";*/
