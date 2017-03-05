@@ -1,4 +1,8 @@
+@import "colors";
+@import "palettes";
+
 .page-layout {
+
   color: #ffffff;
   font-family: Source Sans Pro, Helvetica, sans-serif;
   font-weight: 300;
@@ -12,5 +16,23 @@
 
   position: relative;
 
+  .entry-ctn {
+    width: 100%;
+    background-color: $c-two;
+    /*padding: 20px;*/
+    color: $color-font-secondary;
+    margin-top: 30px;
+    /*margin-top: 2em;*/
 
+    //box-shadow: 0 14px 25px -8px #191919;
+    /**box-shadow: 0 6px 4px -4px black;*/
+
+    border: 4px solid $c-three;
+    /*padding: 2em;*/
+
+    .blog {
+      margin: 15px;
+    }
+
+  }
 }

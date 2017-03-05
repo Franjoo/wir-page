@@ -45,7 +45,7 @@
 
     methods: {
       shouldShow: function (index, size) {
-        if (index >= 3) {
+        if (index >= 5) {
           return false
         }
         return true;
@@ -67,7 +67,7 @@
 <style lang="scss" rel="stylesheet/scss" scoped>
 
   .image-grid {
-    background-color: lightsalmon;
+    /*background-color: lightsalmon;*/
     width: 100%;
 
     .flex-grid {
@@ -79,8 +79,8 @@
 
       flex: 1 0 auto;
       height: auto;
-      background-color: red;
-      width: 20%;
+      /*background-color: red;*/
+      width: 33%;
 
       &:before {
         content: '';
@@ -102,6 +102,8 @@
           padding-bottom: 100%;
           overflow: hidden;
 
+          object-fit: contain;
+
           img {
             width: 100%;
             position: absolute;
@@ -109,12 +111,13 @@
             top: 50%;
             /*width: auto;*/
 
-            transform: translate(-50%, -50%) scale(2);
+            transform: translate(-50%, -50%) scale(4);
             transition: all 2s ease;
             /*transform: scale(1);*/
 
-            &:hover {
-              transform: translate(-50%, -50%) scale(1.8);
+
+            &:hover{
+              transform: translate(-50%, -50%)  scale(1.8);
             }
 
           }

@@ -182,8 +182,9 @@ export default {
       {path: 'album_header/header_1.jpg'},
       {path: 'album_demo/demo_2.jpg'},
       {path: 'album_header/header_2.jpg'},
-      {path: 'album/header/header_3.jpg'},
-      {path: 'album/header/header_4.jpg'}
+      {path: 'album_header/header_3.jpg'},
+      {path: 'album_header/header_4.jpg'},
+      {path: 'album_header/header_4.jpg'}
       ],
 
   },

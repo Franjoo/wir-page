@@ -1,0 +1,25 @@
+
+@import "colors";
+//@mixin pattern-1() {
+//$c-two: #729f98;
+//$c-one: #f0eceb;
+//$c-three: #283018;
+//$c-four: #aa863a;
+
+
+$c-two: #e8edf3;
+//$c-one: #e6cf8b;
+$c-one: #a6ba76;
+$c-three: #b56969;
+$c-four: #22264b;
+
+$c-bg-foreground: $background-color;
+//$c-bg-background: $c-one;
+$c-bg-background: $foreground-color;
+
+//#e8edf3
+//#e6cf8b
+//#b56969
+//#22264b
+
+//}

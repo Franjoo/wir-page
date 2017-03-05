@@ -24,6 +24,8 @@
         >
         </navigation>
 
+        <div class="gradient-overlay"></div>
+
         <router-view class="blog-column" transition="fade" transition-mode="out-in"></router-view>
       </div>
 
@@ -182,15 +184,17 @@
           .component-ctn {
 
             /*background pattern*/
-            $pattern: 'lines-45-b';
-            $background-size: 10px;
-            $background-color: #3a3a3a;
-            /*$foreground-color : #191919;*/
-            $foreground-color: #2b2b2b;
+            /*// $pattern: 'lines-45-b';*/
+            /*// $pattern: 'feather';*/
+            $pattern: 'candy-a';
+            $background-size: 400px;
+
 
             /*@mixin pb($pattern, $background-size, $background-color, $foreground-color, $opacity, $mask){}-->*/
 
-            @include pb($pattern, $background-size, $background-color, $foreground-color);
+            // @include pb($pattern, $background-size, $background-color, $foreground-color);
+           // @include pb($pattern, $background-size, $c-bg-foreground, $c-bg-background);
+            @include pb($pattern, $background-size, $c-bg-background, #191919);
 
             width: 100%;
             pointer-events: all;
@@ -202,7 +206,20 @@
             margin-bottom: 280px;
             /*margin-top: 300px;*/
 
-            background-color: $color-content-background;
+            background-color: $c-bg-background;
+
+            .gradient-overlay{
+              /*background-color: blue;*/
+              width: 100%;
+              height: 200vh;
+              position: absolute;
+              top:0;
+              left: 0;
+              display: none;
+
+              background: linear-gradient($c-bg-foreground, rgba($c-bg-foreground, 0));
+            //  background: linear-gradient(rgba($c-bg-foreground, 0.1), rgba($c-bg-foreground, 0.1));
+            }
 
             .blog-column {
               pointer-events: all;
@@ -238,26 +255,6 @@
           @media #{$lg}{
             width: $md-bp
           }
-        }
-
-        .entry-ctn {
-          width: 100%;
-          /*padding: 20px;*/
-          background-color: $color-entry;
-          color: $color-font-secondary;
-          margin-top: 30px;
-          /*margin-top: 2em;*/
-
-          box-shadow: 0 14px 25px -8px #191919;
-          /**box-shadow: 0 6px 4px -4px black;*/
-
-          //  border: 5px solid #191919;
-          /*padding: 2em;*/
-
-          .blog {
-            margin: 15px;
-          }
-
         }
 
       }

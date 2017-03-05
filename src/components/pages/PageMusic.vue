@@ -1,7 +1,7 @@
 <!------------------- H T M L ------------------->
 
 <template>
-  <div class="page-music">
+  <div class="page-music page-layout">
 
     <div class="entry-ctn">
       <iframe scrolling="no" id="hearthis_at_track_484468" width="100%" height="130"
@@ -64,6 +64,7 @@
 
 <style lang="scss" rel="stylesheet/scss" scoped>
 
+@import "../../styles/all.scss";
 
   .page-music {
     /*color: #ffffff;*/

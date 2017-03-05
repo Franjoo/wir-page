@@ -1,7 +1,7 @@
 <!------------------- H T M L ------------------->
 
 <template>
-  <div class="page-about">
+  <div class="page-about page-layout">
     <div class="entry-ctn">
       <div class="blog">
 
