@@ -8,7 +8,7 @@
 
     <div ref=navWrapper class="nav-wrapper">
       <div ref=itemCtn class="navigation-ctn">
-        <div class="item-ctn"><span><router-link to="/dev/home">Blog</router-link></span></div>
+        <div class="item-ctn"><span><router-link to="/dev/home">Neuigkeiten</router-link></span></div>
         <div class="item-ctn"><span><router-link to="/dev/music">Artists</router-link></span></div>
         <div class="item-ctn"><span><router-link to="/dev/about">Über Uns</router-link></span></div>
       </div>

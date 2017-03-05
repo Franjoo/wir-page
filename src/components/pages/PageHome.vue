@@ -9,14 +9,20 @@
     <!--hearthis custom-->
 
     <div class="entry-ctn">
-      <single-video
-        :path='test123'
-      ></single-video>
+      <image-grid
+        :album="'grid-letzte-wiese'"
+      ></image-grid>
     </div>
+
+    <!--<div class="entry-ctn">-->
+      <!--<single-video-->
+        <!--:path="'test123'"-->
+      <!--&gt;</single-video>-->
+    <!--</div>-->
 
     <div class="entry-ctn">
       <single-image
-        :path='test123'
+        :path="'test123'"
       ></single-image>
     </div>
 
@@ -108,9 +114,7 @@
     },
 
     mounted: function () {
-      console.log('app mounted', this)
       window.addEventListener('scroll', this.scrollFunction);
-
     }
 
   };

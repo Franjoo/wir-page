@@ -8,9 +8,9 @@
       <div class="image-wrapper">
         <div class="thumbnail" :style="{ height: height + 'vh' }">
 
+          <img :src="rootPath + img" alt="Image"/>
           <!--<img :src="rootPath + '/' + album.path" alt="Image"/>-->
-          <!--<img :src="rootPath + '/' + album.path" alt="Image"/>-->
-          <img :src="'././static/photos/album_header/header_4.jpg'" alt="Image"/>
+          <!--<img :src="'././static/photos/album_header/header_4.jpg'" alt="Image"/>-->
 
 
         </div>
@@ -42,7 +42,7 @@
   // push
 
   export default {
-    props: ['height', 'album'],
+    props: ['height', 'album', 'img'],
 
 
     components: {
@@ -63,7 +63,8 @@
       rootPath: function () {
 
 
-               return '././static/photos/album_' + this.album.name
+//               return '././static/photos/album_' + this.album.name
+               return '././static/photos/album_header/'
 
        //  return '././static/photos/album_header/home/header_1.jpg'
       },
@@ -181,7 +182,10 @@
       right: 0;
       bottom: 0;
 
-      //** box-shadow: inset 0 14px 25px -8px #191919, inset 0 -14px 25px -8px #191919;*/
+      /*/!** box-shadow: inset 0 14px 25px -8px #191919, inset 0 -14px 25px -8px #191919;*!*/
+      // box-shadow: inset 0 70px 130px 8px $c-shadow, inset 0 -14px 25px -8px $c-shadow;
+     //  box-shadow: inset 0 70px 130px -8px $c-shadow, inset 0 -70px 130px -8px $c-shadow;
+      box-shadow: inset 0 20px 40px -20px $c-shadow, inset 0 -70px 130px -8px $c-shadow;
 
     }
 

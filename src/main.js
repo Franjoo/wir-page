@@ -15,9 +15,9 @@ Vue.use(VueRouter)
 const routes = [
   // {path: prefix + '*', redirect: prefix + '/home'},
   {path: prefix + '/', redirect: prefix + '/home'},
-  {path: prefix + '/home', component: PageHome},
-  {path: prefix + '/music', component: PageMusic},
-  {path: prefix + '/about', component: PageAbout},
+  {path: prefix + '/home', component: PageHome, name:'home'},
+  {path: prefix + '/music', component: PageMusic, name:'music'},
+  {path: prefix + '/about', component: PageAbout, name:'about'},
 ]
 
 const router = new VueRouter({

@@ -3,7 +3,7 @@
 <template>
   <div class="single-video">
     <div class="single-video-wrapper">
-      <video controls>
+      <video controls preload="auto">
         <source :src="'././static/photos/album_demo/renata.mp4'" type="video/mp4">
         <!--<source src="mov_bbb.ogg" type="video/ogg">-->
         Your browser does not support HTML5 video.

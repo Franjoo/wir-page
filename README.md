@@ -16,6 +16,7 @@
 - [ ] components
     - [ ] ImageGrid
     - [ ] StickyNavigation
+    - [ ] GuestMixContainer
 - [ ] content complete
 - [ ] component routing with scroll (/music/$artist)
 - [ ] Impressum / AGBs
@@ -28,9 +29,9 @@
 ## version: 0.4
 - [ ] components
     - [ ] Header
-    - [ ] Footer
-    - [ ] SingleImage
-    - [ ] SingleVideo
+    - [x] Footer
+    - [x] SingleImage
+    - [x] SingleVideo
 - [x] layout breakpoints / media queries
 - [x] page routing
 - [x] 'Über Uns' page

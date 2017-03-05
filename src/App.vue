@@ -13,10 +13,12 @@
       <custom-header
         :height=headerHeight
         :album=headerAlbum
+        :img=headerImage
       ></custom-header>
 
 
       <div class="component-ctn" :style="{ marginTop: marginForHeader + 'vh' }">
+        <!--<div class="component-ctn">-->
         <navigation
           :marginForHeader=headerHeight
         >
@@ -52,6 +54,7 @@
     data: function () {
       return {
         headerAlbum: dummy.headerAlbums['home'],
+        headerImage: '',
         marginForHeader: 0,
         headerHeight: 0,
         dev: true,
@@ -83,7 +86,7 @@
         return this.$route.fullPath === "/"
       },
 
-      headerAlbum: function(){
+      headerAlbum: function () {
         return 'home'
 //        return this.$route.fullPath
       }
@@ -95,22 +98,27 @@
 //            window.addEventListener('scroll', this.onScroll)
 
 
+      // this.headerHeight = this.marginForHeader = window.height
+      //  console.log('screenheight', this.headerHeight)
 
-     // this.headerHeight = this.marginForHeader = window.height
-    //  console.log('screenheight', this.headerHeight)
+      this.headerHeight = this.marginForHeader = 70
 
-          this.headerHeight = this.marginForHeader = 70
+    }, beforeUpdate: function () {
 
-      console.log('document', document.getElementById('app'))
+      if (this.$route.name === 'home') {
+        this.headerImage = 'header_1.jpg'
+      }
 
+      else if (this.$route.name === 'music') {
+        this.headerImage = 'header_2.jpg'
+      }
 
+      else if (this.$route.name === 'about') {
+        this.headerImage = 'header_3.jpg'
+      }
     }
 
   };
-
-
-
-
 
 
 </script>
@@ -119,7 +127,6 @@
 
   @import 'styles/all';
   @import 'styles/patternbolt';
-
 
   html {
     height: 100%;
@@ -135,7 +142,6 @@
         font-weight: 100;
 
         /*pointer-events: none;*/
-
 
         .development-ctn {
           position: fixed;
@@ -176,17 +182,15 @@
           .component-ctn {
 
             /*background pattern*/
-            $pattern : 'lines-45-b';
-            $background-size : 10px;
-            $background-color : #3a3a3a;
-            $foreground-color : #191919;
-
+            $pattern: 'lines-45-b';
+            $background-size: 10px;
+            $background-color: #3a3a3a;
+            /*$foreground-color : #191919;*/
+            $foreground-color: #2b2b2b;
 
             /*@mixin pb($pattern, $background-size, $background-color, $foreground-color, $opacity, $mask){}-->*/
 
-
             @include pb($pattern, $background-size, $background-color, $foreground-color);
-
 
             width: 100%;
             pointer-events: all;
@@ -196,11 +200,9 @@
             align-items: center;
 
             margin-bottom: 280px;
-            margin-top: 300px;
+            /*margin-top: 300px;*/
 
             background-color: $color-content-background;
-
-
 
             .blog-column {
               pointer-events: all;
@@ -209,9 +211,12 @@
               justify-content: center;
               align-items: center;
 
-              /*padding: 10px;*/
+              padding: 20px;
 
-              /*background-color: #9b9b9b;*/
+              // background-color: $c-shadow;
+
+              // border: 5px solid $foreground-color;
+
             }
 
           }
@@ -240,10 +245,14 @@
           /*padding: 20px;*/
           background-color: $color-entry;
           color: $color-font-secondary;
-          margin-top: 20px;
+          margin-top: 30px;
+          /*margin-top: 2em;*/
 
           box-shadow: 0 14px 25px -8px #191919;
           /**box-shadow: 0 6px 4px -4px black;*/
+
+          //  border: 5px solid #191919;
+          /*padding: 2em;*/
 
           .blog {
             margin: 15px;

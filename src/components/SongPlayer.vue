@@ -44,7 +44,7 @@
 
   var url = require("file!./../assets/audio/audiodemo.mp3");
 
-  console.log('URL', url)
+//  console.log('URL', url)
 
   export default {
 
@@ -68,7 +68,7 @@
 
       // scoped player
       pause: function () {
-        console.log('scopedPause')
+//        console.log('scopedPause')
         this.paused = true;
         this.$refs.audio.pause()
       },
@@ -105,7 +105,7 @@
     },
 
     mounted: function () {
-      console.log(this.$refs.audio.src, this.audioPath)
+//      console.log(this.$refs.audio.src, this.audioPath)
     }
 
   };

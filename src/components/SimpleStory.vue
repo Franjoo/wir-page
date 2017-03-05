@@ -73,8 +73,8 @@
             this.$nextTick(function () {
 
                 let s = this.$refs.story;
-                console.log(s.offsetHeight, s.height)
-                            s.style.height = s.offsetHeight / 1.5 + "px";
+//                console.log(s.offsetHeight, s.height)
+//                            s.style.height = s.offsetHeight / 1.5 + "px";
 
             })
 

@@ -177,6 +177,17 @@ export default {
 
   },
 
+  albums: {
+    'grid-letzte-wiese': [
+      {path: 'album_header/header_1.jpg'},
+      {path: 'album_demo/demo_2.jpg'},
+      {path: 'album_header/header_2.jpg'},
+      {path: 'album/header/header_3.jpg'},
+      {path: 'album/header/header_4.jpg'}
+      ],
+
+  },
+
   story: {
     name: 'demo',
     title: 'A Demo Story',
@@ -212,6 +223,20 @@ export default {
     // date: '24/12/2016',
     date: 'August 04,2017',
     event: 'Uckeralm Festival 2017'
-  }
+  },
+
+  albumGrid: {
+    name: 'demo',
+    title: 'Example Album',
+    images: [
+      {title: 'demo 1', path: 'demo_1.jpg'},
+      {title: 'demo 2', path: 'demo_2.jpg'},
+      {title: 'demo 3', path: 'demo_3.jpg'},
+      {title: 'demo 4', path: 'demo_4.jpg'},
+      {title: 'demo 5', path: 'demo_5.jpg'},
+      {title: 'demo 6', path: 'demo_6.jpg'},
+    ]
+
+  },
 
 }
