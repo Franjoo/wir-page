@@ -92,7 +92,7 @@
     position: fixed;
     bottom: 0;
     left:0;
-    pointer-events: all;
+    // pointer-events: all;
 
     color: white;
     background-color: #191919;

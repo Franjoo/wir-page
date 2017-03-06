@@ -8,7 +8,7 @@
 
     <!--hearthis custom-->
 
-    <div class="entry-ctn">
+    <div class="entry-ctn" >
       <image-grid
         :album="'grid-letzte-wiese'"
       ></image-grid>
@@ -129,7 +129,7 @@
 <style lang="scss" rel="stylesheet/scss">
 
 
-  /*@import "../../styles/all";*/
+  @import "../../styles/all";
 
   .page-home {
 

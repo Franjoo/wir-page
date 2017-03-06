@@ -8,7 +8,8 @@
       <div class="image-wrapper">
         <div class="thumbnail" :style="{ height: height + 'vh' }">
 
-          <img :src="rootPath + img" alt="Image"/>
+          <!--<img :src="rootPath + img" alt="Image"/>-->
+          <img :src="rootPath + 'header_4.jpg'" alt="Image"/>
           <!--<img :src="rootPath + '/' + album.path" alt="Image"/>-->
           <!--<img :src="'././static/photos/album_header/header_4.jpg'" alt="Image"/>-->
 
@@ -117,7 +118,7 @@
 
   .custom-header {
     position: fixed;
-    background-color: lightsalmon;
+    background-color: lightgray;
     width: 100%;
     height: 0;
     top: 0;
