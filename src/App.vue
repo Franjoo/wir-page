@@ -12,165 +12,157 @@
     <!--<div v-if='!comingPageRoute' class="production-ctn">-->
 
 
+    <div class="parallax debug">
+      <div id="group1" class="pl-group">
+        <div class="pl-layer pl--base">
+          <div class="title">Base Layer</div>
 
-      <div class="parallax">
-        <div id="group1" class="parallax__group">
-          <div class="parallax__layer parallax__layer--base">
-            <div class="title">Base Layer</div>
-          </div>
-        </div>
-        <div id="group2" class="parallax__group">
-          <div class="parallax__layer parallax__layer--base">
-            <div class="title">Base Layer</div>
-          </div>
-          <div class="parallax__layer parallax__layer--back">
-            <div class="title">Background Layer</div>
-          </div>
-        </div>
-        <div id="group3" class="parallax__group">
-          <div class="parallax__layer parallax__layer--fore">
-            <div class="title">Foreground Layer</div>
-          </div>
-          <div class="parallax__layer parallax__layer--base">
-            <div class="title">Base Layer</div>
-          </div>
-        </div>
-        <div id="group4" class="parallax__group">
-          <div class="parallax__layer parallax__layer--base">
-            <div class="title">Base Layer</div>
-          </div>
-          <div class="parallax__layer parallax__layer--back">
-            <div class="title">Background Layer</div>
-          </div>
-          <div class="parallax__layer parallax__layer--deep">
-            <div class="title">Deep Background Layer</div>
-          </div>
-        </div>
-        <div id="group5" class="parallax__group">
-          <div class="parallax__layer parallax__layer--fore">
-            <div class="title">Foreground Layer</div>
-          </div>
-          <div class="parallax__layer parallax__layer--base">
-            <div class="title">Base Layer</div>
-          </div>
-        </div>
-        <div id="group6" class="parallax__group">
-          <div class="parallax__layer parallax__layer--back">
-            <div class="title">Background Layer</div>
-          </div>
-          <div class="parallax__layer parallax__layer--base">
-            <div class="title">Base Layer</div>
-          </div>
-        </div>
-        <div id="group7" class="parallax__group">
-          <div class="parallax__layer parallax__layer--base">
-            <div class="title">Base Layer</div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!--<div class="parallax">-->
-
-
-        <!--<div id="group1" class="pl-group">-->
-
-          <!--<div class="pll pl-back">-->
+          <!--<div>-->
             <!--<custom-header-->
-            <!--:height=100-->
-            <!--:album=headerAlbum-->
-            <!--:img=headerImage-->
+              <!--:height=100-->
+              <!--:album=headerAlbum-->
+              <!--:img=headerImage-->
             <!--&gt;</custom-header>-->
           <!--</div>-->
 
-        <!--</div>-->
+        </div>
+      </div>
+      <div id="group2" class="pl-group">
+        <div class="pl-layer pl--base">
+          <div class="title">Base Layer</div>
+        </div>
+        <div class="pl-layer pl--back">
+          <div class="title">Background Layer</div>
+        </div>
+      </div>
+      <div id="group3" class="pl-group">
+        <div class="pl-layer pl--fore">
+          <div class="title">Foreground Layer</div>
+        </div>
+        <div class="pl-layer pl--base">
+          <div class="title">Base Layer</div>
+        </div>
+      </div>
+      <div id="group4" class="pl-group">
+        <div class="pl-layer pl--base">
+          <div class="title">Base Layer</div>
+        </div>
+        <div class="pl-layer pl--back">
+          <div class="title">Background Layer</div>
+        </div>
+        <div class="pl-layer pl--deep">
+          <div class="title">Deep Background Layer</div>
+        </div>
+      </div>
+      <div id="group5" class="pl-group">
+        <div class="pl-layer pl--fore">
+          <div class="title">Foreground Layer</div>
+        </div>
+        <div class="pl-layer pl--base">
+          <div class="title">Base Layer</div>
+        </div>
+      </div>
+      <div id="group6" class="pl-group">
+        <div class="pl-layer pl--back">
+          <div class="title">Background Layer</div>
+        </div>
+        <div class="pl-layer pl--base">
+          <div class="title">Base Layer</div>
+        </div>
+      </div>
+      <div id="group7" class="pl-group">
+        <div class="pl-layer pl--base">
+          <div class="title">Base Layer</div>
+        </div>
+      </div>
+    </div>
 
 
-        <!--<div id="group2" class="pl-group">-->
-          <!--<div class="pll pll-deep">-->
-            <!--<div class="bg-pattern"></div>-->
-          <!--</div>-->
+    <!--IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
 
-          <!--<div class="pll pl-base">-->
-
-            <!--<div class="component-ctn">-->
-              <!--&lt;!&ndash;<navigation :marginForHeader='0'></navigation>&ndash;&gt;-->
-              <!--<div class="gradient-overlay"></div>-->
-              <!--<router-view class="blog-column" transition="fade" transition-mode="out-in"></router-view>-->
-            <!--</div>-->
-
-          <!--</div>-->
-        <!--</div>-->
+    <!--<div class="parallax">-->
 
 
-        <!--<div id="group3" class="pl-group">-->
+    <!--<div id="group1" class="pl-group">-->
+
+    <!--<div class="pll pl-back">-->
+    <!--<custom-header-->
+    <!--:height=100-->
+    <!--:album=headerAlbum-->
+    <!--:img=headerImage-->
+    <!--&gt;</custom-header>-->
+    <!--</div>-->
+
+    <!--</div>-->
 
 
-        <!--</div>-->
-        <!--<div class="pll pl-back">-->
-          <!--<custom-footer class="pll-deep"></custom-footer>-->
-        <!--</div>-->
-      <!--</div>-->
+    <!--<div id="group2" class="pl-group">-->
+    <!--<div class="pll pl--deep">-->
+    <!--<div class="bg-pattern"></div>-->
+    <!--</div>-->
 
-      <!--<div id="group3" class="pl-group">-->
-      <!--<div class="pll pll&#45;&#45;fore">-->
-      <!--<div class="title">Foreground Layer</div>-->
-      <!--</div>-->
-      <!--<div class="pll pll&#45;&#45;base">-->
-      <!--<div class="title">Base Layer</div>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--<div id="group4" class="pl-group">-->
-      <!--<div class="pll pll&#45;&#45;base">-->
-      <!--<div class="title">Base Layer</div>-->
-      <!--</div>-->
-      <!--<div class="pll pll&#45;&#45;back">-->
-      <!--<div class="title">Background Layer</div>-->
-      <!--</div>-->
-      <!--<div class="pll pll&#45;&#45;deep">-->
-      <!--<div class="title">Deep Background Layer</div>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--<div id="group5" class="pl-group">-->
-      <!--<div class="pll pll&#45;&#45;fore">-->
-      <!--<div class="title">Foreground Layer</div>-->
-      <!--</div>-->
-      <!--<div class="pll pll&#45;&#45;base">-->
-      <!--<div class="title">Base Layer</div>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--<div id="group6" class="pl-group">-->
-      <!--<div class="pll pll&#45;&#45;back">-->
-      <!--<div class="title">Background Layer</div>-->
-      <!--</div>-->
-      <!--<div class="pll pll&#45;&#45;base">-->
-      <!--<div class="title">Base Layer</div>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--<div id="group7" class="pl-group">-->
-      <!--<div class="pll pll&#45;&#45;base">-->
-      <!--<div class="title">Base Layer</div>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</div>-->
+    <!--<div class="pll pl-base">-->
+
+    <!--<div class="component-ctn">-->
+    <!--&lt;!&ndash;<navigation :marginForHeader='0'></navigation>&ndash;&gt;-->
+    <!--<div class="gradient-overlay"></div>-->
+    <!--<router-view class="blog-column" transition="fade" transition-mode="out-in"></router-view>-->
+    <!--</div>-->
+
+    <!--</div>-->
+    <!--</div>-->
+
+
+    <!--<div id="group3" class="pl-group">-->
+
+
+    <!--</div>-->
+    <!--<div class="pll pl-back">-->
+    <!--<custom-footer class="pl--deep"></custom-footer>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--<div id="group3" class="pl-group">-->
+    <!--<div class="pll pll&#45;&#45;fore">-->
+    <!--<div class="title">Foreground Layer</div>-->
+    <!--</div>-->
+    <!--<div class="pll pll&#45;&#45;base">-->
+    <!--<div class="title">Base Layer</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div id="group4" class="pl-group">-->
+    <!--<div class="pll pll&#45;&#45;base">-->
+    <!--<div class="title">Base Layer</div>-->
+    <!--</div>-->
+    <!--<div class="pll pll&#45;&#45;back">-->
+    <!--<div class="title">Background Layer</div>-->
+    <!--</div>-->
+    <!--<div class="pll pll&#45;&#45;deep">-->
+    <!--<div class="title">Deep Background Layer</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div id="group5" class="pl-group">-->
+    <!--<div class="pll pll&#45;&#45;fore">-->
+    <!--<div class="title">Foreground Layer</div>-->
+    <!--</div>-->
+    <!--<div class="pll pll&#45;&#45;base">-->
+    <!--<div class="title">Base Layer</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div id="group6" class="pl-group">-->
+    <!--<div class="pll pll&#45;&#45;back">-->
+    <!--<div class="title">Background Layer</div>-->
+    <!--</div>-->
+    <!--<div class="pll pll&#45;&#45;base">-->
+    <!--<div class="title">Base Layer</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div id="group7" class="pl-group">-->
+    <!--<div class="pll pll&#45;&#45;base">-->
+    <!--<div class="title">Base Layer</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
 
     <!--</div>-->
   </div>
@@ -401,14 +393,12 @@
           perspective-origin-x: 100%;
           -webkit-perspective-origin-x: 100%;
 
-
-          .parallax__group {
+          .pl-group {
             position: relative;
             height: 100vh;
             transform-style: preserve-3d;
 
-
-            .parallax__layer {
+            .pl-layer {
               position: absolute;
               top: 0;
               left: 0;
@@ -418,23 +408,22 @@
               transform-origin-x: 100%;
             }
 
-
-            .parallax__layer--fore {
+            .pl--fore {
               transform: translateZ(90px) scale(.7);
               z-index: 1;
             }
 
-            .parallax__layer--base {
+            .pl--base {
               transform: translateZ(0);
               z-index: 4;
             }
 
-            .parallax__layer--back {
+            .pl--back {
               transform: translateZ(-300px) scale(2);
               z-index: 3;
             }
 
-            .parallax__layer--deep {
+            .pl--deep {
               transform: translateZ(-600px) scale(3);
               z-index: 2;
             }
@@ -450,32 +439,38 @@
             transform: translate(-50%, -50%);
           }
 
-          #group1 .parallax__layer--base {
-            background: rgb(102,204,102);
+          &.debug{
+
+
+            #group1 .pl--base {
+            background: rgb(102, 204, 102);
           }
 
-          #group2 .parallax__layer--back {
-            background: rgb(123,210,102);
+          #group2 .pl--back {
+            background: rgb(123, 210, 102);
           }
 
-          #group3 .parallax__layer--base {
-            background: rgb(153,216,101);
+          #group3 .pl--base {
+            background: rgb(153, 216, 101);
           }
 
-          #group4 .parallax__layer--deep {
-            background: rgb(184,223,101);
+          #group4 .pl--deep {
+            background: rgb(184, 223, 101);
           }
 
-          #group5 .parallax__layer--base {
-            background: rgb(214,229,100);
+          #group5 .pl--base {
+            background: rgb(214, 229, 100);
           }
 
-          #group6 .parallax__layer--back {
-            background: rgb(245,235,100);
+          #group6 .pl--back {
+            background: rgb(245, 235, 100);
           }
 
-          #group7 .parallax__layer--base {
-            background: rgb(255,241,100);
+          #group7 .pl--base {
+            background: rgb(255, 241, 100);
+          }
+
+
           }
 
 
