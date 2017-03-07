@@ -10,6 +10,7 @@
 ## version: 0.6
 - [ ] facebook integration
 - [ ] beatport integration
+- [ ] resource optimization
 
 
 ## version: 0.5

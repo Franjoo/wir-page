@@ -90,7 +90,7 @@
   .navigation {
     // pointer-events: all;
 
-    z-index: 2;
+   // z-index: 2; :fixme
     width: 100%;
     overflow: hidden;
     padding-bottom: 20px;

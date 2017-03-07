@@ -9,163 +9,91 @@
 
 
     <!-- PRODUCTION WRAPPER -->
-    <!--<div v-if='!comingPageRoute' class="production-ctn">-->
+    <div v-if='!comingPageRoute' class="production-ctn">
 
 
-    <div class="parallax debug">
-      <div id="group1" class="pl-group">
-        <div class="pl-layer pl--base">
-          <div class="title">Base Layer</div>
+      <!--GROUP TEMPLATE-->
 
-          <!--<div>-->
-            <!--<custom-header-->
-              <!--:height=100-->
-              <!--:album=headerAlbum-->
-              <!--:img=headerImage-->
-            <!--&gt;</custom-header>-->
-          <!--</div>-->
+      <!--<div id="groupX" class="pl-group">-->
+      <!--<div class="pl-layer pl&#45;&#45;fore">-->
+      <!--&lt;!&ndash;<div class=""</div>&ndash;&gt;-->
+      <!--</div>-->
+      <!--<div class="pl-layer pl&#45;&#45;base">-->
+      <!--&lt;!&ndash;<div class=""</div>&ndash;&gt;-->
+      <!--</div>-->
+      <!--<div class="pl-layer pl&#45;&#45;back">-->
+      <!--&lt;!&ndash;<div class=""</div>&ndash;&gt;-->
+      <!--</div>-->
+      <!--<div class="pl-layer pl&#45;&#45;deep">-->
+      <!--&lt;!&ndash;<div class=""</div>&ndash;&gt;-->
+      <!--</div>-->
+      <!--</div>-->
+
+
+      <div class="parallax debug">
+
+        <!--<div id="group0" class="pl-group">-->
+        <!--<div class="pl-layer pl&#45;&#45;back pl-pattern"></div>-->
+        <!--</div>-->
+
+        <div id="group0" class="pl-group group-pattern">
+          <div class="pl-layer pl--back pl-pattern"></div>
+        </div>
+
+
+        <div id="group1" class="pl-group">
+
+
+          <!-- B A C K -->
+          <div class="pl-layer pl--deep pl-header">
+            <!--<div class="title">Base Layer</div>-->
+
+            <!--<div class="pl-layer pl&#45;&#45;back pl-pattern"></div>-->
+
+
+            <custom-header
+              :height=100
+              :album=headerAlbum
+              :img=headerImage
+            ></custom-header>
+
+          </div>
 
         </div>
-      </div>
-      <div id="group2" class="pl-group">
-        <div class="pl-layer pl--base">
-          <div class="title">Base Layer</div>
+
+
+        <div id="group2" class="pl-group">
+
+          <!-- B A S E-->
+          <div class="pl-layer pl--base pl-main">
+
+            <div class="component-ctn">
+              <navigation :marginForHeader='0'></navigation>
+              <div class="gradient-overlay"></div>
+              <router-view class="blog-column" transition="fade" transition-mode="out-in"></router-view>
+            </div>
+
+          </div>
+
         </div>
-        <div class="pl-layer pl--back">
-          <div class="title">Background Layer</div>
-        </div>
-      </div>
-      <div id="group3" class="pl-group">
-        <div class="pl-layer pl--fore">
-          <div class="title">Foreground Layer</div>
-        </div>
-        <div class="pl-layer pl--base">
-          <div class="title">Base Layer</div>
-        </div>
-      </div>
-      <div id="group4" class="pl-group">
-        <div class="pl-layer pl--base">
-          <div class="title">Base Layer</div>
-        </div>
-        <div class="pl-layer pl--back">
-          <div class="title">Background Layer</div>
-        </div>
-        <div class="pl-layer pl--deep">
-          <div class="title">Deep Background Layer</div>
-        </div>
-      </div>
-      <div id="group5" class="pl-group">
-        <div class="pl-layer pl--fore">
-          <div class="title">Foreground Layer</div>
-        </div>
-        <div class="pl-layer pl--base">
-          <div class="title">Base Layer</div>
-        </div>
-      </div>
-      <div id="group6" class="pl-group">
-        <div class="pl-layer pl--back">
-          <div class="title">Background Layer</div>
-        </div>
-        <div class="pl-layer pl--base">
-          <div class="title">Base Layer</div>
-        </div>
-      </div>
-      <div id="group7" class="pl-group">
-        <div class="pl-layer pl--base">
-          <div class="title">Base Layer</div>
-        </div>
+
+
+        <!---->
+        <!---->
+        <!--<div id="group4" class="pl-group">-->
+        <!--<div class="pl-layer pl&#45;&#45;base">-->
+        <!--&lt;!&ndash;<div class="title">Base Layer</div>&ndash;&gt;-->
+        <!--<custom-footer></custom-footer>-->
+
+        <!--</div>-->
+        <!--</div>-->
+
+
       </div>
     </div>
-
-
-    <!--IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
-
-    <!--<div class="parallax">-->
-
-
-    <!--<div id="group1" class="pl-group">-->
-
-    <!--<div class="pll pl-back">-->
-    <!--<custom-header-->
-    <!--:height=100-->
-    <!--:album=headerAlbum-->
-    <!--:img=headerImage-->
-    <!--&gt;</custom-header>-->
-    <!--</div>-->
-
-    <!--</div>-->
-
-
-    <!--<div id="group2" class="pl-group">-->
-    <!--<div class="pll pl--deep">-->
-    <!--<div class="bg-pattern"></div>-->
-    <!--</div>-->
-
-    <!--<div class="pll pl-base">-->
-
-    <!--<div class="component-ctn">-->
-    <!--&lt;!&ndash;<navigation :marginForHeader='0'></navigation>&ndash;&gt;-->
-    <!--<div class="gradient-overlay"></div>-->
-    <!--<router-view class="blog-column" transition="fade" transition-mode="out-in"></router-view>-->
-    <!--</div>-->
-
-    <!--</div>-->
-    <!--</div>-->
-
-
-    <!--<div id="group3" class="pl-group">-->
-
-
-    <!--</div>-->
-    <!--<div class="pll pl-back">-->
-    <!--<custom-footer class="pl--deep"></custom-footer>-->
-    <!--</div>-->
-    <!--</div>-->
-
-    <!--<div id="group3" class="pl-group">-->
-    <!--<div class="pll pll&#45;&#45;fore">-->
-    <!--<div class="title">Foreground Layer</div>-->
-    <!--</div>-->
-    <!--<div class="pll pll&#45;&#45;base">-->
-    <!--<div class="title">Base Layer</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div id="group4" class="pl-group">-->
-    <!--<div class="pll pll&#45;&#45;base">-->
-    <!--<div class="title">Base Layer</div>-->
-    <!--</div>-->
-    <!--<div class="pll pll&#45;&#45;back">-->
-    <!--<div class="title">Background Layer</div>-->
-    <!--</div>-->
-    <!--<div class="pll pll&#45;&#45;deep">-->
-    <!--<div class="title">Deep Background Layer</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div id="group5" class="pl-group">-->
-    <!--<div class="pll pll&#45;&#45;fore">-->
-    <!--<div class="title">Foreground Layer</div>-->
-    <!--</div>-->
-    <!--<div class="pll pll&#45;&#45;base">-->
-    <!--<div class="title">Base Layer</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div id="group6" class="pl-group">-->
-    <!--<div class="pll pll&#45;&#45;back">-->
-    <!--<div class="title">Background Layer</div>-->
-    <!--</div>-->
-    <!--<div class="pll pll&#45;&#45;base">-->
-    <!--<div class="title">Base Layer</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div id="group7" class="pl-group">-->
-    <!--<div class="pll pll&#45;&#45;base">-->
-    <!--<div class="title">Base Layer</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-
-    <!--</div>-->
   </div>
+
+
 </template>
 
 <script>
@@ -297,17 +225,11 @@
 
         .production-ctn {
 
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          justify-content: center;
-          align-items: center;
-
-          .bg-pattern {
-            $pattern: 'candy-a';
-            $background-size: 400px;
-            @include pb($pattern, $background-size, $c-bg-background, #191919);
-          }
+          /*display: flex;*/
+          /*flex-direction: column;*/
+          /*width: 100%;*/
+          /*justify-content: center;*/
+          /*align-items: center;*/
 
           /*pointer-events: none;*/
 
@@ -394,8 +316,8 @@
           -webkit-perspective-origin-x: 100%;
 
           .pl-group {
-            position: relative;
-            height: 100vh;
+            /*position: relative;*/
+            /*height: 100vh;*/
             transform-style: preserve-3d;
 
             .pl-layer {
@@ -410,22 +332,23 @@
 
             .pl--fore {
               transform: translateZ(90px) scale(.7);
-              z-index: 1;
+              z-index: 2;
             }
 
             .pl--base {
-              transform: translateZ(0);
-              z-index: 4;
+              // transform: translate3D(0, -300px, 0);
+              transform: translate3D(0, 0, 0);
+              z-index: 0;
             }
 
             .pl--back {
               transform: translateZ(-300px) scale(2);
-              z-index: 3;
+              z-index: -2;
             }
 
             .pl--deep {
               transform: translateZ(-600px) scale(3);
-              z-index: 2;
+              z-index: -5;
             }
 
           }
@@ -439,40 +362,88 @@
             transform: translate(-50%, -50%);
           }
 
-          &.debug{
+          &.debug {
 
+            /*#group1 .pl--base {*/
+            /*background: rgb(102, 204, 102);*/
+            /*}*/
 
-            #group1 .pl--base {
-            background: rgb(102, 204, 102);
+            /*#group2 .pl--back {*/
+            /*background: rgb(123, 210, 102);*/
+            /*}*/
+
+            /*#group3 .pl--base {*/
+            /*background: rgb(153, 216, 101);*/
+            /*}*/
+
+            /*#group4 .pl--deep {*/
+            /*background: rgb(184, 223, 101);*/
+            /*}*/
+
+            /*#group5 .pl--base {*/
+            /*background: rgb(214, 229, 100);*/
+            /*}*/
+
+            /*#group6 .pl--back {*/
+            /*background: rgb(245, 235, 100);*/
+            /*}*/
+
+            /*#group7 .pl--base {*/
+            /*background: rgb(255, 241, 100);*/
+            /*}*/
+
+            .pl--fore {
+              background-color: #adb957;
+            }
+
+            .pl--base {
+              background-color: #b93d47;
+            }
+
+            .pl--back {
+              background-color: #5e8eb9;
+            }
+
+            .pl--deep {
+              /*background-color: #342ab9;*/
+            }
+
+            .pl-header {
+              height: 200vh;
+              z-index: 5;
+            }
+
+            .pl-main {
+              background-color: inherit;
+              height: 200vh;
+              z-index: 3;
+
+            }
+
+            .group-pattern {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              height: 10933px;
+
+              .pl-pattern {
+                height: 5000px;
+                /*bottom: 0;*/
+                /*top: auto;*/
+                /*z-index: 10;*/
+
+                /*transform: translateY(600px);*/
+
+                $pattern: 'candy-a';
+                $background-size: 400px;
+                @include pb($pattern, $background-size, $c-bg-background, #191919);
+
+              }
+
+            }
+
           }
-
-          #group2 .pl--back {
-            background: rgb(123, 210, 102);
-          }
-
-          #group3 .pl--base {
-            background: rgb(153, 216, 101);
-          }
-
-          #group4 .pl--deep {
-            background: rgb(184, 223, 101);
-          }
-
-          #group5 .pl--base {
-            background: rgb(214, 229, 100);
-          }
-
-          #group6 .pl--back {
-            background: rgb(245, 235, 100);
-          }
-
-          #group7 .pl--base {
-            background: rgb(255, 241, 100);
-          }
-
-
-          }
-
 
         }
       }

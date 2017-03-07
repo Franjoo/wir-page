@@ -99,7 +99,7 @@
     width: 100%;
     height: 280px;
 
-    z-index: -1;
+    // z-index: -1; :fixme
 
     .footer-links-wrapper {
       position: fixed;

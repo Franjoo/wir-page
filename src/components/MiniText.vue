@@ -96,7 +96,7 @@
         right: 0;
         left: 0;
 
-        z-index: -1;
+       // z-index: -1; :fixme
 
         width: 100%;
 
